@@ -1,2 +1,2 @@
 #!/bin/sh 
-git config --global core.excludesfile ~/SparksShare/Rtemplate/dotFiles/dot.gitignore
+git config --global core.excludesfile ~/SparksShare/config/git/.gitignore
