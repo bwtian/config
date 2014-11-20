@@ -1,0 +1,12 @@
+[general]
+name=mmqgis
+qgisMinimumVersion=2.4
+description=A collection of QGIS vector layer operation plugins
+category=Vector
+version=2014.9.19
+author=Michael Minn
+email=pyqgis@michaelminn.com
+homepage=http://michaelminn.com/linux/mmqgis
+repository=http://plugins.qgis.org/plugins/mmqgis/
+experimental=False
+deprecated=False

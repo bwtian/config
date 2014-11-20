@@ -1,0 +1,16 @@
+
+[general]
+name=Raster Interpolation
+description=Raster Interpolation browses a vector layer of points, interpolates at their position the value of a raster layer and save the value in a chosen field of the vector layer. Interpolation can be nearest, linear or bi-cubic. Simple filter on the vector layer may be applied (browse only currently NULL values and/or only selected features).
+version=1.3.5
+qgisMinimumVersion=2.0
+
+icon=icons/rasterinterpolation.png
+
+tags=DTM,DEM,terrain,elevation,ground,raster,interpolation,bicubic,linear
+homepage=http://3nids.github.io/rasterinterpolation
+tracker=https://github.com/3nids/rasterinterpolation/issues
+repository=https://github.com/3nids/rasterinterpolation
+
+author=Denis Rouzaud
+email=denis.rouzaud@gmail.com

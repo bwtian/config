@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/rasterinterpolation" >
+        <file>icons/rasterinterpolation.png</file>
+    </qresource>
+</RCC>

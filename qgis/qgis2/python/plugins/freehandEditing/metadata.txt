@@ -1,0 +1,53 @@
+; the next section is mandatory
+[general]
+name=Freehand Editing
+qgisMinimumVersion=2.0
+description=Freehand line/polygon editing
+category=Vector
+version=version 0.3.1
+author=Pavol Kapusta
+email=pavol.kapusta@gmail.com
+; end of mandatory metadata
+
+; start of optional metadata
+changelog=
+    0.2.4: snapping of first point of lines allowed (this is related only to lines), after selecting layer and defining of
+           snapping tolerance in Snapping options (Settings -> Snapping Options)
+    0.2.5: - snapping of first point of lines allowed ..., CTRL key has to be pressed
+           - cleanup
+           - exchange of values between rubberband and createFeature function mediated with QgsGeometry
+    0.2.6: added metadata.txt to work with 2.0 version,updated calls to QgsRubberband's deprecated isPolygon method
+    0.3.0: update to new PyQt string API
+           update to new-style PyQt connections
+           add check for invalid (possibly missing) provider field default
+           increase tolerance resolution to 3 decimal places (for sub-meter map scales)
+           add ability to halt drag-drawing with a secondary click
+           bring code inline with PEP 8 style
+           larrys@dakotacarto.com
+    0.3.1: make opening of the optional feature form modal, with auto-deleting
+             of feature on Cancel (same behavior as main digitizing tools)
+           add property to ignore clicks when tool is active, keeping the tool
+             from registering clicks when they occur outside of a modal dialog
+           fix tool not switching to correct geometry when switching between
+             layers in edit mode
+           add some transparency to tool's rubberband and set color for polygon
+             similar to that of main digitizing tools
+           larrys@dakotacarto.com
+
+; tags are in comma separated value format, spaces are allowed
+tags=digitizing,vector
+
+; these metadata can be empty
+; in a future version of the web application it will
+; be probably possible to create a project on redmine
+; if they are not filled
+homepage=http://hub.qgis.org/projects/freehandediting
+tracker=http://hub.qgis.org/projects/freehandediting/issues
+repository=https://github.com/vinayan/freehandEditing
+icon=icon.png
+
+; experimental flag
+experimental=False
+
+; deprecated flag (applies to the whole plugin and not only to the uploaded version)
+deprecated=False

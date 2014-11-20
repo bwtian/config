@@ -1,0 +1,1 @@
+mklink %APPDATA%\sparkleshare\config.xml %USERPROFILE%\SparkleShare\config\sparkleshare\config.xml

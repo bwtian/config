@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+    	 <name>QGisView</name>
+    	 <description>http://map.project-osrm.org/?loc=41.634399234,142.239564764</description>
+	     <open>0</open>
+	     <Style id="sh_ylw-pushpin">
+	     	<IconStyle>
+	     		<scale>1.2</scale>
+	     	</IconStyle>
+	     	<PolyStyle>
+	     		<fill>0</fill>
+	     	</PolyStyle>
+	     </Style>
+	     <Style id="sn_ylw-pushpin">
+	     	<PolyStyle>
+	     		<fill>0</fill>
+	     	</PolyStyle>
+	     </Style>
+	     <StyleMap id="msn_ylw-pushpin">
+	     	<Pair>
+	     		<key>normal</key>
+	     		<styleUrl>#sn_ylw-pushpin</styleUrl>
+	     	</Pair>
+	     	<Pair>
+	     		<key>highlight</key>
+	     		<styleUrl>#sh_ylw-pushpin</styleUrl>
+	     	</Pair>
+	     </StyleMap>
+	     	<Style id="hl">
+	     		<IconStyle>
+	     			<scale>0.7</scale>
+	     			<Icon>
+	     				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+	     			</Icon>
+	     		</IconStyle>
+	     		<LabelStyle>
+	     			<scale>0.7</scale>
+	     		</LabelStyle>
+	     		<ListStyle>
+	     		</ListStyle>
+	     	</Style>
+	     	<Style id="default">
+	     		<IconStyle>
+	     			<scale>0.7</scale>
+	     			<Icon>
+	     				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+	     			</Icon>
+	     		</IconStyle>
+	     		<LabelStyle>
+	     			<scale>0.7</scale>
+	     		</LabelStyle>
+	     		<ListStyle>
+	     		</ListStyle>
+	     	</Style>
+	     	<StyleMap id="default0">
+	     		<Pair>
+	     			<key>normal</key>
+	     			<styleUrl>#default</styleUrl>
+	     		</Pair>
+	     		<Pair>
+	     			<key>highlight</key>
+	     			<styleUrl>#hl</styleUrl>
+	     		</Pair>
+	     	</StyleMap>
+      <Folder>
+    		<LookAt>
+    		   <longitude>142.239565</longitude>
+    		   <latitude>41.366384</latitude>
+    		   <altitude>0</altitude>
+    		   <heading>0.00</heading>
+    		   <tilt>0</tilt>
+    		   <range>1953369.140353</range>
+    		   <gx:altitudeMode>relativeToGround</gx:altitudeMode>
+    		</LookAt>
+      <GroundOverlay>
+    	 <name>QGisView</name>
+    	<Icon>
+    	<href>QGisView_14384382.199908_4229269.167515_2014-11-18_17_31_17_625000.png</href>
+    		<viewBoundScale>1.0</viewBoundScale>
+    	</Icon>
+    	<gx:LatLonQuad>
+    		<coordinates>
+129.217103828,35.479744696,0 155.262025699,35.479744696,0 155.262025699,47.253022309,0 129.217103828,47.253022309,0
+    		</coordinates>
+    	</gx:LatLonQuad>
+    </GroundOverlay>
+</Folder>
+<Schema name="gearthview" id="gearthview">
+	<SimpleField name="id" type="string"></SimpleField>
+</Schema>
+</Document>
+</kml>

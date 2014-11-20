@@ -1,0 +1,116 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mmqgis_grid_form.ui'
+#
+# Created: Fri Dec 20 08:54:19 2013
+#      by: PyQt4 UI code generator 4.9.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
+
+class Ui_mmqgis_grid_form(object):
+    def setupUi(self, mmqgis_grid_form):
+        mmqgis_grid_form.setObjectName(_fromUtf8("mmqgis_grid_form"))
+        mmqgis_grid_form.setWindowModality(QtCore.Qt.ApplicationModal)
+        mmqgis_grid_form.setEnabled(True)
+        mmqgis_grid_form.resize(371, 327)
+        mmqgis_grid_form.setMouseTracking(False)
+        self.buttonBox = QtGui.QDialogButtonBox(mmqgis_grid_form)
+        self.buttonBox.setGeometry(QtCore.QRect(110, 290, 160, 26))
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
+        self.vspacing = QtGui.QLineEdit(mmqgis_grid_form)
+        self.vspacing.setGeometry(QtCore.QRect(200, 220, 151, 22))
+        self.vspacing.setObjectName(_fromUtf8("vspacing"))
+        self.label = QtGui.QLabel(mmqgis_grid_form)
+        self.label.setGeometry(QtCore.QRect(10, 10, 108, 22))
+        self.label.setObjectName(_fromUtf8("label"))
+        self.label_2 = QtGui.QLabel(mmqgis_grid_form)
+        self.label_2.setGeometry(QtCore.QRect(200, 200, 91, 22))
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.hspacing = QtGui.QLineEdit(mmqgis_grid_form)
+        self.hspacing.setGeometry(QtCore.QRect(200, 120, 151, 22))
+        self.hspacing.setObjectName(_fromUtf8("hspacing"))
+        self.filename = QtGui.QLineEdit(mmqgis_grid_form)
+        self.filename.setGeometry(QtCore.QRect(10, 30, 261, 21))
+        self.filename.setReadOnly(False)
+        self.filename.setObjectName(_fromUtf8("filename"))
+        self.browse = QtGui.QPushButton(mmqgis_grid_form)
+        self.browse.setGeometry(QtCore.QRect(280, 30, 79, 26))
+        self.browse.setObjectName(_fromUtf8("browse"))
+        self.xvalue = QtGui.QLineEdit(mmqgis_grid_form)
+        self.xvalue.setGeometry(QtCore.QRect(200, 70, 151, 22))
+        self.xvalue.setObjectName(_fromUtf8("xvalue"))
+        self.label_3 = QtGui.QLabel(mmqgis_grid_form)
+        self.label_3.setGeometry(QtCore.QRect(200, 100, 91, 22))
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.yvalue = QtGui.QLineEdit(mmqgis_grid_form)
+        self.yvalue.setGeometry(QtCore.QRect(200, 170, 151, 22))
+        self.yvalue.setObjectName(_fromUtf8("yvalue"))
+        self.label_6 = QtGui.QLabel(mmqgis_grid_form)
+        self.label_6.setGeometry(QtCore.QRect(10, 100, 91, 22))
+        self.label_6.setObjectName(_fromUtf8("label_6"))
+        self.label_7 = QtGui.QLabel(mmqgis_grid_form)
+        self.label_7.setGeometry(QtCore.QRect(10, 200, 91, 22))
+        self.label_7.setObjectName(_fromUtf8("label_7"))
+        self.width = QtGui.QLineEdit(mmqgis_grid_form)
+        self.width.setGeometry(QtCore.QRect(10, 120, 151, 22))
+        self.width.setObjectName(_fromUtf8("width"))
+        self.height = QtGui.QLineEdit(mmqgis_grid_form)
+        self.height.setGeometry(QtCore.QRect(10, 220, 151, 22))
+        self.height.setObjectName(_fromUtf8("height"))
+        self.gridtype = QtGui.QComboBox(mmqgis_grid_form)
+        self.gridtype.setGeometry(QtCore.QRect(100, 260, 171, 22))
+        self.gridtype.setObjectName(_fromUtf8("gridtype"))
+        self.xtype = QtGui.QComboBox(mmqgis_grid_form)
+        self.xtype.setGeometry(QtCore.QRect(10, 70, 151, 22))
+        self.xtype.setObjectName(_fromUtf8("xtype"))
+        self.xtype.addItem(_fromUtf8(""))
+        self.xtype.addItem(_fromUtf8(""))
+        self.xtype.addItem(_fromUtf8(""))
+        self.ytype = QtGui.QComboBox(mmqgis_grid_form)
+        self.ytype.setGeometry(QtCore.QRect(10, 170, 151, 22))
+        self.ytype.setObjectName(_fromUtf8("ytype"))
+        self.ytype.addItem(_fromUtf8(""))
+        self.ytype.addItem(_fromUtf8(""))
+        self.ytype.addItem(_fromUtf8(""))
+        self.line = QtGui.QFrame(mmqgis_grid_form)
+        self.line.setGeometry(QtCore.QRect(10, 150, 341, 16))
+        self.line.setFrameShape(QtGui.QFrame.HLine)
+        self.line.setFrameShadow(QtGui.QFrame.Sunken)
+        self.line.setObjectName(_fromUtf8("line"))
+
+        self.retranslateUi(mmqgis_grid_form)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), mmqgis_grid_form.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), mmqgis_grid_form.reject)
+        QtCore.QMetaObject.connectSlotsByName(mmqgis_grid_form)
+
+    def retranslateUi(self, mmqgis_grid_form):
+        mmqgis_grid_form.setWindowTitle(QtGui.QApplication.translate("mmqgis_grid_form", "Grid", None, QtGui.QApplication.UnicodeUTF8))
+        self.vspacing.setText(QtGui.QApplication.translate("mmqgis_grid_form", "10", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("mmqgis_grid_form", "Output Shapefile", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("mmqgis_grid_form", "V Spacing", None, QtGui.QApplication.UnicodeUTF8))
+        self.hspacing.setText(QtGui.QApplication.translate("mmqgis_grid_form", "10", None, QtGui.QApplication.UnicodeUTF8))
+        self.filename.setText(QtGui.QApplication.translate("mmqgis_grid_form", "grid.shp", None, QtGui.QApplication.UnicodeUTF8))
+        self.browse.setText(QtGui.QApplication.translate("mmqgis_grid_form", "Browse...", None, QtGui.QApplication.UnicodeUTF8))
+        self.xvalue.setText(QtGui.QApplication.translate("mmqgis_grid_form", "0", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("mmqgis_grid_form", "H Spacing", None, QtGui.QApplication.UnicodeUTF8))
+        self.yvalue.setText(QtGui.QApplication.translate("mmqgis_grid_form", "0", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_6.setText(QtGui.QApplication.translate("mmqgis_grid_form", "Width", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_7.setText(QtGui.QApplication.translate("mmqgis_grid_form", "Height", None, QtGui.QApplication.UnicodeUTF8))
+        self.width.setText(QtGui.QApplication.translate("mmqgis_grid_form", "100", None, QtGui.QApplication.UnicodeUTF8))
+        self.height.setText(QtGui.QApplication.translate("mmqgis_grid_form", "100", None, QtGui.QApplication.UnicodeUTF8))
+        self.xtype.setItemText(0, QtGui.QApplication.translate("mmqgis_grid_form", "Left X", None, QtGui.QApplication.UnicodeUTF8))
+        self.xtype.setItemText(1, QtGui.QApplication.translate("mmqgis_grid_form", "Center X", None, QtGui.QApplication.UnicodeUTF8))
+        self.xtype.setItemText(2, QtGui.QApplication.translate("mmqgis_grid_form", "Right X", None, QtGui.QApplication.UnicodeUTF8))
+        self.ytype.setItemText(0, QtGui.QApplication.translate("mmqgis_grid_form", "Top Y", None, QtGui.QApplication.UnicodeUTF8))
+        self.ytype.setItemText(1, QtGui.QApplication.translate("mmqgis_grid_form", "Middle Y", None, QtGui.QApplication.UnicodeUTF8))
+        self.ytype.setItemText(2, QtGui.QApplication.translate("mmqgis_grid_form", "Bottom Y", None, QtGui.QApplication.UnicodeUTF8))
+

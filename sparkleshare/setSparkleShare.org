@@ -1,0 +1,47 @@
+
+* https://github.com/hbons/SparkleShare/wiki/Configuration-options
+
+There are a few default configuration options you can override by putting them in the config.xml found in the hidden 
+~/.config/sparkleshare/ folder (%APPDATA%\sparkleshare\ on Windows).
+
+These may change or may be removed at any time, so be careful if you plan to make any manual changes.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<sparkleshare>
+  <user>
+    <name>Hylke Bons</name>
+    <email>hylkebons@gmail.com</email>
+  </user>
+  <folders_path>/Users/hbons/SparkleShare</folders_path> // Optional
+  <fetch_avatars>False</fetch_avatars> // Optional
+  <notifications>True</notifications> // Optional
+  <folder>
+    <path>/Users/hbons/Desktop</path> // Optional
+    <name>SparkleShare-Design-Corner</name>
+    <identifier>f8f7d0976075daf78ed9f456976fae33e3b9bd18</identifier>
+    <url>ssh://git@github.com/hbons/SparkleShare-Design-Corner</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>gnome-emoji</name>
+    <identifier>f851e0a5d3ad20d345d3eae86ec5ed1eae998405</identifier>
+    <url>ssh://git@github.com/hbons/gnome-emoji</url>
+    <backend>Git</backend>
+    <announcements_url>tcp://server:80</announcements_url> // Optional
+  </folder>
+</sparkleshare>
+** To change a project's path
+
+Add the project
+Stop SparkleShare
+Move the project
+Edit the config, folders_path being the parent folder
+Start SparkleShare
+
+
+** To use your avatar
+
+Add an avatar at http://gravatar.com for the email config value
+Add in the <fetch_avatars>True</fetch_avatars> config option
+Restart SparkleShare
+SparkleShare will then pull down the avatar from there into ~/.config/sparkleshare/avatars/ folder (%APPDATA%\sparkleshare\avatars\ on Windows)

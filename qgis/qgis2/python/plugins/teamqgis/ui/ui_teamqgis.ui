@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>teamqgis</class>
+ <widget class="QDockWidget" name="teamqgis">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>308</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">teamqgis</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QFrame" name="browseFrame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="margin">
+        <number>6</number>
+       </property>
+       <item row="1" column="1">
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="2">
+           <widget class="QComboBox" name="listCombo">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QComboBox::AdjustToContents</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QToolButton" name="previousButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>21</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string/>
+            </property>
+            <property name="text">
+             <string notr="true">&lt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QToolButton" name="nextButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>21</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string notr="true">&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="currentPosLabel">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string/>
+            </property>
+            <property name="text">
+             <string notr="true">0/0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>276</width>
+           <height>40</height>
+          </size>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="panCheck">
+            <property name="text">
+             <string>pan</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="scaleCheck">
+            <property name="text">
+             <string>scale</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QToolButton" name="editFormButton">
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string notr="true">...</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/openform.svg</normaloff>../icons/openform.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QToolButton" name="actionButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/action.svg</normaloff>../icons/action.svg</iconset>
+            </property>
+            <property name="popupMode">
+             <enum>QToolButton::MenuButtonPopup</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>276</width>
+           <height>84</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <widget class="QPushButton" name="translateLeftButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>16</x>
+            <y>29</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Left</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="translateRightButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>30</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Right</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="translateDownButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>99</x>
+            <y>58</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Down</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="translateUpButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>99</x>
+            <y>0</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Up</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="applyChangesButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>115</x>
+            <y>30</y>
+            <width>41</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Apply</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>276</width>
+           <height>94</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <widget class="QComboBox" name="fieldOneNameComboBox">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="fieldOneValueComboBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>138</x>
+            <y>10</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="fieldTwoNameComboBox">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>40</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="fieldTwoValueComboBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>138</x>
+            <y>40</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="fieldThreeNameComboBox">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>70</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="fieldThreeValueComboBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>138</x>
+            <y>70</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
