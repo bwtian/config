@@ -107,7 +107,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 ### Source bash_aliased
-. ~/SparkleShare/config.bash_aliases
+. ~/SparkleShare/config/shells/bash/bash_aliases.sh
 
 
 
