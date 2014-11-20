@@ -17,6 +17,7 @@ codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
 # # Functions
 # #####################################################################
 alias uu='source ~/Dropbox/config/deb/3_update/1_update.deb.sh'
+source ~/Dropbox/config/shells/bash/
 function uPPA(){
     ppas=" "
 sudo add-apt-repository ppa:ubuntugis/ppa
