@@ -106,9 +106,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+### Source bash_aliased
+. ~/.bash_aliases
 
-#if [ -f ~/Dropbox/config/shells/bash/bash_aliases ]; then
-    . ~/Dropbox/config/shells/bash/bash_aliases.sh
-    . ~/Dropbox/config/shells/bash/bash_path.sh
-#fi
+
 
