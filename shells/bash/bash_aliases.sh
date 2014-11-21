@@ -26,7 +26,7 @@ for i in $ppas; do sudo add-apt-repository $i; done
 function uStart(){
     apps="ubuntu-restricted-extras   flashplugin-installer  openjdk-7-jre
           unity-tweak-tool  nautilus-open-terminal  rdesktop
-          vlc fping nmap synaptic
+          vlc fping nmap synaptic fdupes
           nautilus-dropbox  sparkleshare  git  Curl  emacs graphviz
           texstudio texlive-full texlive-latex-pandoc base
           qgis  gdal-bin libgdal-dev r-base abiword  "
@@ -282,7 +282,7 @@ echo $extension
 #for i in $extension; do mkdir $i; done
     
 }
-tfindup(){
+function tdupfind(){
 OUTF=rem-duplicates.sh;
 echo "#! /bin/sh" > $OUTF;
 find "$@" -type f -printf "%s\n" | sort -n | uniq -d |
@@ -291,7 +291,7 @@ find "$@" -type f -printf "%s\n" | sort -n | uniq -d |
     sed -r 's/^[0-9a-f]*( )*//;s/([^a-zA-Z0-9./_-])/\\\1/g;s/(.+)/#rm -v \1/' >> $OUTF;
 chmod a+x $OUTF; ls -l $OUTF
 }
-function tdeldup(){
+function tdupdel(){
     # delete  duplicated files and report who are keeped
     fdupes -rdN $1 > keepedDups.txt
     find -empty -type d -delete
