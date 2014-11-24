@@ -15,8 +15,8 @@ keycode 63=Control_L
 keycode 71=Control_R
 ! keycodes 66 and 69 are the option/alt keys; assign them as Meta keys
 keycode 66=Meta_L
-keycode 66=Meta_L
-keycode =Meta_R
+keycode 131=Meta_L
+keycode 130=Meta_R
 keycode 69=Meta_R
 
 ! now tell X11 that the Meta keys act as the Mod1 (meta) modier key; that is, when they are pressed with KEY, it is the same as hitting M-KEY
