@@ -20,4 +20,4 @@ keycode 69=Meta_R
 add Mod1 = Meta_L Meta_R
 ! tell X11 that the Control keys are Control modifiers, so when pressed with u (for example) it is the same as hitting C-u
 add Control = Control_L Control_R
-q
+
