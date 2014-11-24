@@ -249,12 +249,6 @@ keycode 254 =
 keycode 255 =
 * Examples
 #+BEGIN_EXAMPLE
-
-#+END_EXAMPLE
-
-
-
-
 !
 ! Change Caps_Lock to Ctrl
 !
@@ -264,3 +258,8 @@ remove Lock = Caps_Lock
 keysym Caps_Lock = Control_L
 !add Lock = Caps_Lock
 add Control = Control_L
+#+END_EXAMPLE
+
+
+
+
