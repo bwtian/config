@@ -275,6 +275,7 @@ add Control = Control_L
 
 #+END_EXAMPLE
 * Reference
+http://askubuntu.com/questions/254424/how-can-i-change-what-keys-on-my-keyboard-do-how-can-i-create-custom-keyboard
 
 
 
