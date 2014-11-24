@@ -18,7 +18,7 @@ codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
 # #####################################################################
 alias uu='source ~/Dropbox/config/deb/3_update/1_update.deb.sh'
 source ~/Dropbox/config/shells/bash/rdesktop.sh
-xmodmap ~/SparkleShare/config/xmodmap/Xmodmap
+alias xmod='xmodmap ~/SparkleShare/config/xmodmap/Xmodmap\
 function uPPA(){
     ppas=" "
 sudo add-apt-repository ppa:ubuntugis/ppa
