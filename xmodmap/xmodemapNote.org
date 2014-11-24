@@ -248,9 +248,9 @@ keycode 253 =
 keycode 254 =
 keycode 255 =
 * Tools
-|
-|
-|
+|   |   |   |   |   |
+|---+---+---+---+---|
+|   |   |   |   |   |
 * Xmodmap Examples
 #+BEGIN_EXAMPLE
 !
