@@ -247,6 +247,10 @@ keycode 252 =
 keycode 253 =
 keycode 254 =
 keycode 255 =
+* Examples
+#+BEGIN_EXAMPLE
+
+#+END_EXAMPLE
 
 
 
