@@ -2,5 +2,5 @@
 
 ln -sfv xmodmap ~/.xmodmap
 # in bashrc
-# source ~/Sparkle
+# source ~/SparkleShare/config/xmodmap/xmodmap
  
