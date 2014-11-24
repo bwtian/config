@@ -254,6 +254,11 @@ keycode 255 =
 | xev     | KeyCodes information       |
 | xmodmap | Remap, Write, and Activate |
 |---------+----------------------------|
+xmodmap -e "keycode 66 = Control_L"
+xmodmap -pke > ~/.Xmodmap Write a new Xmodmap
+xmodmap ~/.Xmodmap   
+touch ~/.xinitrc
+echo "xmodmap ~/.Xmodmap" > ~/.xinitrc
 * Xmodmap Examples
 #+BEGIN_EXAMPLE
 !
