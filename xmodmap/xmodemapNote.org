@@ -248,12 +248,12 @@ keycode 253 =
 keycode 254 =
 keycode 255 =
 * Tools
-|---------+----------+---+---+---|
-| Tools   | KeyCodes |   |   |   |
-|---------+----------+---+---+---|
-| xev     |          |   |   |   |
-| xmodmap |          |   |   |   |
-|---------+----------+---+---+---|
+|---------+----------------------------|
+| Tools   |                            |
+|---------+----------------------------|
+| xev     | KeyCodes information       |
+| xmodmap | Remap, Write, and Activate |
+|---------+----------------------------|
 * Xmodmap Examples
 #+BEGIN_EXAMPLE
 !
