@@ -1,5 +1,5 @@
 !
-! Change Caps_Lock to Ctrl
+! Swap Ctrl and Caps_Lock
 !
 remove Lock = Caps_Lock
 remove Control = Control_L
