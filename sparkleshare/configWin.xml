@@ -108,12 +108,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>Rtemplate </name>
-    <identifier>28bcca64b28f8356a61921d21cbc60213a071d6a</identifier>
-    <url>ssh://git@github.com/bwtian/Rtemplate </url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>teamlucc</name>
     <identifier>ba2dcac0a918aa01ca24d86befb63239f16c29d1</identifier>
     <url>ssh://git@github.com/bwtian/teamlucc</url>
@@ -131,5 +125,4 @@
     <url>ssh://git@github.com/bwtian/TIR</url>
     <backend>Git</backend>
   </folder>
-
 </sparkleshare>
