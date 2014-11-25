@@ -1,2 +1,2 @@
 @echo off
-mklink /D "C:\Users\phd\OneDrive"  "C:\Air\OneDriveKyoto\"
+mklink /D  %USERPROFILE%\OneDrive  C:\Air\OneDrive
