@@ -126,12 +126,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>p1410iamgCode</name>
-    <identifier>dbf32add7eeb300de3360885badaff49a053ac93</identifier>
-    <url>ssh://git@github.com/bwtian/p1410iamgCode</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>p1408iamg</name>
     <identifier>d29de5947ccf39be209bee26423a77dbab31ef07</identifier>
     <url>ssh://git@github.com/bwtian/p1408iamg</url>
