@@ -1,0 +1,10 @@
+[general]
+name=Join lines
+description=Permanently join two intersecting or snapped lines
+category=Vector
+version=Version 0.3
+author=NextGIS
+authorName=Maxim Dubinin
+email=sim@gis-lab.info
+icon=icon.png
+qgisMinimumVersion=2.0.0
