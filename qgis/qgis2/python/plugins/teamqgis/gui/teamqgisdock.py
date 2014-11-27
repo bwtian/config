@@ -46,6 +46,9 @@ class teamqgisDock(QDockWidget, Ui_teamqgis):
         QDockWidget.__init__(self)
         self.setupUi(self)
 
+        # Track attr warnings so they are not repeated for multiple items
+        self.warned_attr_values = []
+
         self.setWindowTitle("teamqgis: %s" % layer.name())
         if layer.hasGeometryType() is False:
             self.panCheck.setChecked(False)
@@ -124,10 +127,11 @@ class teamqgisDock(QDockWidget, Ui_teamqgis):
             if hasAllowedClasses:
                 valueComboBox.addItems(allowedClasses)
             attr_value = str(feature[nameComboBox.currentText()])
-            if (allowedClasses == None) or (attr_value not in allowedClasses):
+            if (allowedClasses == None) or (attr_value not in allowedClasses) and (attr_value not in self.warned_attr_values):
                 self.iface.messageBar().pushMessage("Class name not in allowed class list",
                     'Assign an allowed class or add "%s" to allowed class list'%attr_value,
                     level=QgsMessageBar.WARNING, duration=3)
+                self.warned_attr_values.append(attr_value)
                 valueComboBox.addItem(attr_value)
             valueComboBox.setCurrentIndex(valueComboBox.findText(attr_value))
 
@@ -284,6 +288,7 @@ class teamqgisDock(QDockWidget, Ui_teamqgis):
 
     @pyqtSlot(name="on_nextButton_clicked")
     def nextFeature(self):
+        self.warned_attr_values = [] # Reset attr warnings
         i = self.listCombo.currentIndex()
         c = self.listCombo.count()
         n = min(i+1, c-1)
