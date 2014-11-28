@@ -2,15 +2,17 @@
 IniMode=true
 
 [version]
-written_by_TXS_version=2.6.6
+written_by_TXS_version=2.8.6
 written_by_TXS_SVNversion=0
 created_by_TXS_version=2.6.6
 created_by_TXS_SVNversion=0
+written_by_TXS_hg_revision=4748:330327fcc9c9
+created_by_TXS_hg_revision=4748:330327fcc9c9
 
 [texmaker]
 Tools\Commands\latex="latex -src -interaction=nonstopmode %.tex"
 Tools\Commands\pdflatex="pdflatex -synctex=1 -interaction=nonstopmode -output-directory=build  %.tex"
-Tools\Commands\xelatex=
+Tools\Commands\xelatex="xelatex.exe -synctex=1 -interaction=nonstopmode %.tex"
 Tools\Commands\lualatex="lualatex -synctex=1 -interaction=nonstopmode %.tex"
 Tools\Commands\view-dvi=evince %.dvi > /dev/null
 Tools\Commands\view-ps=evince %.ps > /dev/null
@@ -48,7 +50,7 @@ Tools\Commands\recompile-bibliography=txs:///compile | txs:///bibliography | txs
 Tools\Commands\svn=
 Tools\Commands\svnadmin=
 Tools\Commands\Build=txs:///pdflatex | txs:///bibtex | txs:///makeglossary | txs:///makeindex | txs:///pdflatex | txs:///view
-ToolBar\CentralVisible=false
+ToolBar\CentralVisible=true
 StructureView\ShowLinenumbers=false
 StructureView\Indentation=-1
 StructureView\IndentIncludes=false
@@ -73,7 +75,7 @@ Tools\Insert%20Unicode%20From%20SymbolGrid=false
 Spell\DictionaryDir=/usr/share/hunspell
 Spell\Language=en_US
 Spell\Dic=<dic not found>
-Thesaurus\Database=/usr/share/mythes/th_en_US_v2.dat
+Thesaurus\Database=C:/Program Files (x86)/TeXstudio/dictionaries/th_en_US_v2.dat
 Update\AutoCheck=true
 Update\AutoCheckInvervalDays=7
 Update\LastCheck=@Variant(\0\0\0\x10\0\0\0\0\xff\xff\xff\xff\xff)
@@ -236,8 +238,8 @@ Preview\Precompile%20Preamble=true
 Tools\Automatic%20Rerun%20Commands=latex|pdflatex|xelatex|lualatex|compile
 User\ToolNames=@Invalid()
 User\Tools=@Invalid()
-Tools\Display%20Names=Build
-Tools\User%20Order=Build
+Tools\Display%20Names=Build, makeglossary
+Tools\User%20Order=Build, makeglossary
 Files\Default%20File%20Filter=TeX files (*.tex *.bib *.sty *.cls *.mp *.dtx *.cfg *.ins *.ltx)
 PDFSplitter=0.394833948339483
 Tools\Kind\LaTeX=latex, pdflatex, xelatex, lualatex, latexmk, compile
@@ -278,7 +280,7 @@ Tools\After%20BibTeX%20Change=tmx://latex && tmx://bibtex && tmx://latex
 User\New%20Key%20Replacements%20Created=true
 Macros\0=Key replacement: % before word, %%, , "(?language:latex)(?<=\\s|^)%"
 Macros\1=Key replacement: % after word, " %%", , "(?language:latex)(?<=\\S)%"
-keysetting\size=0
+keysetting\size=1
 changedLatexMenus=@Variant(\0\0\0\b\0\0\0\0)
 CustomToolBar=@Invalid()
 FileToolBar=@Invalid()
@@ -292,10 +294,37 @@ CentralToolBar=@Invalid()
 customIcons=@Variant(\0\0\0\b\0\0\0\0)
 customHighlighting=@Variant(\0\0\0\b\0\0\0\0)
 customCommands=@Invalid()
-Symbols\Quantity=@Variant(\0\0\0\b\0\0\0\x2\0\0\0*\0g\0r\0\x65\0\x65\0k\0/\0i\0m\0g\0\x30\0\x31\0\x33\0g\0r\0\x65\0\x65\0k\0.\0s\0v\0g\0\0\0\x2\0\0\0\x1\0\0\0>\0\x64\0\x65\0l\0i\0m\0i\0t\0\x65\0r\0s\0/\0i\0m\0g\0\x30\0\x31\0\x37\0\x64\0\x65\0l\0i\0m\0i\0t\0\x65\0r\0s\0.\0s\0v\0g\0\0\0\x2\0\0\0\x3)
+Symbols\Quantity=@Variant(\0\0\0\b\0\0\0\0)
 Symbols\Favorite%20IDs=@Invalid()
 Symbols\hiddenlists=
 StructureView\SingleDocMode=false
+Tools\Commands\makeglossaries=makeglossaries.exe %
+Tools\Commands\glossary=txs:///makeglossaries
+StructureView\ReferenceCommandsInContextMenu=\\ref
+Files\AutoDetectEncodingFromChars=true
+Files\AutoDetectEncodingFromLatex=true
+Files\Max%20Recent%20Sessions=5
+Files\Recent%20Session%20Files=@Invalid()
+Files\Bib%20Paths=
+Files\Image%20Paths=
+Editor\Check%20In%20Non%20TeX%20Files=true
+Editor\MaxImageTooltipWidth=400
+Editor\ContextMenuKeyboardModifiers=33554432
+Editor\ContextMenuSpellcheckingEntryLocation=0
+Editor\Completion%20Show%20Placeholders=true
+Editor\Overwrite%20Opening%20Bracket%20Followed%20By%20Placeholder=true
+Editor\Overwrite%20Closing%20Bracket%20Following%20Placeholder=true
+GUI\ToobarIconSize=22
+GUI\SecondaryToobarIconSize=16
+Preview\LoadStrategy=2
+Preview\HighlightColor=#FFFF003F
+Preview\HighlightDuration=2000
+LogView\WarnIfFileSizeLargerMB=2
+Beamer\Encoding=utf8
+Tools\Preview%20Compile%20Time%20Out=15000
+Tools\Had%20Successful%20Process%20Start=false
+keysetting\1\id=main/tools/spelling~0
+keysetting\1\key=Ctrl+:
 
 [formats]
 version=1.0
