@@ -131,4 +131,10 @@
     <url>ssh://git@github.com/bwtian/p1408iamg</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>p1410iamgcode</name>
+    <identifier>dbf32add7eeb300de3360885badaff49a053ac93</identifier>
+    <url>ssh://git@github.com/bwtian/p1410iamgcode</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
