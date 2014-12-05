@@ -65,6 +65,7 @@ alias web='chromium-browser'
 alias men='mendeleydesktop'
 function tex2txt(){
  detex -n  $1 > ${1%\.tex}.txt
+ sed '/^\s*$/d' 
 }
 function pdf2html(){
 pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
