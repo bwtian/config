@@ -71,7 +71,9 @@ function pdf2html(){
 pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
 abiword --to=doc ${1%\.pdf}-img.html
 }
+function zippdf(){
 
+}
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
     file=$1
