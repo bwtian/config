@@ -63,7 +63,8 @@ alias o='xdg-open .' #gnome-open .
 alias r='rstudio'
 alias web='chromium-browser'
 alias men='mendeleydesktop'
-function tex2txt
+function tex2txt(){
+}
 function pdf2html(){
 pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
 abiword --to=doc ${1%\.pdf}-img.html
