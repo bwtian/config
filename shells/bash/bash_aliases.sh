@@ -12,7 +12,7 @@
 # # Global Variables
 # #####################################################################
 codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
-source ~/Dropbox/config/shells/bash/rdesktop.sh
+alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
 # #####################################################################
 # # Functions
 # #####################################################################
