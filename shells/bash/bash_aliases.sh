@@ -74,7 +74,7 @@ abiword --to=doc ${1%\.pdf}-img.html
 function pdfcompress(){
 inFile=$1
 outFile= ${1%\.pdf}-compressed.pdf
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$outFile $inFile
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$outFile $1
 }
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
