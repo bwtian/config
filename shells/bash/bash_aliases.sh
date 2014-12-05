@@ -64,7 +64,7 @@ alias r='rstudio'
 alias web='chromium-browser'
 alias men='mendeleydesktop'
 function tex2txt(){
- detex -n  $1 ${1%\.tex}_paper/project.tex   > out.txt
+ detex -n  $1 > ${1%\.tex}.txt
 }
 function pdf2html(){
 pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
