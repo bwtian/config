@@ -72,7 +72,7 @@ pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
 abiword --to=doc ${1%\.pdf}-img.html
 }
 function zippdf(){
-
+inFile=
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=foo-compressed.pdf foo.pdf
 }
 function mvt(){
