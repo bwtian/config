@@ -71,7 +71,7 @@ function pdf2html(){
 pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
 abiword --to=doc ${1%\.pdf}-img.html
 }
-function zippdf(){
+function pdfcompress(){
 inFile=$1
 outFile= ${1%\.pdf}-compressed.pdf
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$outFile $inFile
