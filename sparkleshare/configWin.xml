@@ -119,4 +119,10 @@
     <url>ssh://git@github.com/bwtian/TIR</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phd (2)</name>
+    <identifier>834534927936ccd8a61fa4b93bb158a34e0cd5b0</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phd</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
