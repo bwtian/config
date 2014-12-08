@@ -29,4 +29,10 @@
     <url>ssh://git@github.com/bwtian/Rprofile</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>rLibLin</name>
+    <identifier>ded3b5596cd75fa5af43165665a225d9e3eee66d</identifier>
+    <url>ssh://git@github.com/bwtian/rLibLin</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
