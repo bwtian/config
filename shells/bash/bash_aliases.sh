@@ -28,10 +28,10 @@ for i in $ppas; do sudo add-apt-repository $i; done
 function uStart(){
     apps="ubuntu-restricted-extras flashplugin-installer  openjdk-7-jre
           unity-tweak-tool  nautilus-open-terminal  rdesktop
-          vlc fping nmap synaptic fdupes catfish samba
+          vlc fping nmap synaptic fdupes catfish samba  abiword 
           nautilus-dropbox  sparkleshare  git  Curl  emacs graphviz
           texstudio texlive-full texlive-latex-pandoc base
-          qgis  gdal-bin libgdal-dev r-base abiword  "
+          qgis  gdal-bin libgdal-dev r-base "
     for i in $apps; do sudo apt-get build-dep -y $i; done
     for i in $apps; do sudo apt-get install -y $i; done
 #  virtualbox mendeleydesktop chromium-browser rstudio
