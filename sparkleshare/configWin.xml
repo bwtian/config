@@ -36,12 +36,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>iamg14</name>
-    <identifier>af31e2cb39a905faeda2cc66384689284239dafb</identifier>
-    <url>ssh://git@github.com/bwtian/iamg14</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>ku</name>
     <identifier>9bf1fa1f242a9113e48a49af53dd25505d7fcce2</identifier>
     <url>ssh://git@github.com/bwtian/ku</url>
