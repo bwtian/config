@@ -26,9 +26,9 @@ sudo add-apt-repository ppa:ubuntugis/ppa
 for i in $ppas; do sudo add-apt-repository $i; done
 }
 function uStart(){
-    apps="ubuntu-restricted-extras   flashplugin-installer  openjdk-7-jre
+    apps="ubuntu-restricted-extras flashplugin-installer  openjdk-7-jre
           unity-tweak-tool  nautilus-open-terminal  rdesktop
-          vlc fping nmap synaptic fdupes catfish
+          vlc fping nmap synaptic fdupes catfish samba
           nautilus-dropbox  sparkleshare  git  Curl  emacs graphviz
           texstudio texlive-full texlive-latex-pandoc base
           qgis  gdal-bin libgdal-dev r-base abiword  "
