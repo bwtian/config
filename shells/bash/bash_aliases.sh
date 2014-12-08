@@ -16,7 +16,7 @@ alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
 # #####################################################################
 # # Functions
 # #####################################################################
-alias uu='source ~/Dropbox/config/deb/3_update/1_update.deb.sh'
+alias uu='source ~/SparleShare/deb/3_update/1_update.deb.sh'
 alias xmod='xmodmap ~/SparkleShare/config/xmodmap/Xmodmap'
 #xmodmap ~/SparkleShare/config/xmodmap/Xmodmap
 
