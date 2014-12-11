@@ -79,7 +79,7 @@ function texDiff(){
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
 function texBuild(){
-pdflatex $1
+pdflatex  $1
 bibtex $1
 makeglossaries $1
 pdflatex $1
