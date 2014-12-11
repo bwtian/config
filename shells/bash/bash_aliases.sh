@@ -78,6 +78,14 @@ function texDiff(){
     # latexdiff old new > diff
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
+function texBuild(){
+pdflatex $1
+bibtex $1
+bibtex audio
+makeglossaries $1
+pdflatex $1
+pdflatex $1
+}
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
     file=$1
