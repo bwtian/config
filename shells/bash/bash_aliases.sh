@@ -79,7 +79,8 @@ function texDiff(){
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
 function texBuild(){
-pdflatex  $1
+if     
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=build  $1
 bibtex $1
 makeglossaries $1
 pdflatex $1
