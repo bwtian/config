@@ -71,8 +71,22 @@ function pdf2html(){
 pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
 abiword --to=doc ${1%\.pdf}-img.html
 }
-function pdfcompress(){
+function pdfCompress(){
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${1%\.pdf}-compressed.pdf $1
+}
+function texDiff(){
+    # latexdiff old new > diff
+latexdiff $1 $2 > ${2%\.tex}-diff.tex
+}
+function texBuild(){
+mkdir -p build
+dir=build
+pdflatex -synctex=1 -interaction=nonstopmode $1
+bibtex $1
+makeglossaries $1
+mkindex $1
+pdflatex $1
+pdflatex $1
 }
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
