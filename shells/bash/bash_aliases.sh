@@ -83,6 +83,7 @@ mkdir -p build
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=build  $1
 bibtex build/${1%\.tex}.aux
 makeglossaries $1
+mkindex $1
 pdflatex $1
 pdflatex $1
 }
