@@ -79,9 +79,10 @@ function texDiff(){
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
 function texBuild(){
-mkdir -p build    
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=build  $1
-bibtex build/${1%\.tex}.aux
+mkdir -p build
+dir=build
+pdflatex -synctex=1 -interaction=nonstopmode $1
+bibtex $1
 makeglossaries $1
 mkindex $1
 pdflatex $1
