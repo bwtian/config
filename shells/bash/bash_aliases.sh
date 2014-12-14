@@ -72,7 +72,8 @@ pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
 abiword --to=doc ${1%\.pdf}-img.html
 }
 function pdfCompress(){
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${1%\.pdf}-compressed.pdf $1
+#gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${1%\.pdf}-compressed.pdf $1
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dColorImageResolution=150 -dNOPAUSE  -dBATCH  -sOutputFile=${1%\.pdf}-compressed.pdf $1
 }
 function texDiff(){
     # latexdiff old new > diff
