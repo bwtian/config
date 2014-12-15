@@ -36,12 +36,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>phdtex (2)</name>
-    <identifier>df0c3a494c26707b5738f566c09b5b712567ac23</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/phdtex</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>p1402tex</name>
     <identifier>4e20b79ce78f2c075d984f2c168454e86f85afa9</identifier>
     <url>ssh://git@github.com/bwtian/p1402tex</url>
