@@ -36,12 +36,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>p1402tex</name>
-    <identifier>4e20b79ce78f2c075d984f2c168454e86f85afa9</identifier>
-    <url>ssh://git@github.com/bwtian/p1402tex</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>p1402code</name>
     <identifier>66ab151040bdca91d5acb950a6f78e4b15e2ec78</identifier>
     <url>ssh://git@github.com/bwtian/p1402code</url>
@@ -51,6 +45,12 @@
     <name>geothermaR</name>
     <identifier>5b4b794e5a5a91cc7ca14c68b72b4bef4fbcb077</identifier>
     <url>ssh://git@github.com/bwtian/geothermaR</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>p1402tex</name>
+    <identifier>4e20b79ce78f2c075d984f2c168454e86f85afa9</identifier>
+    <url>ssh://git@github.com/bwtian/p1402tex</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
