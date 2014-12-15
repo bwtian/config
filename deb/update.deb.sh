@@ -6,7 +6,7 @@
 sudo rm /var/lib/apt/lists/lock
 
 sudo apt-get autoremove -y
-sudo aptitude remove
+sudo aptitude remove -y
 sudo aptitude autoclean -y
 sudo aptitude clean -y
 
