@@ -5,6 +5,11 @@
 # latest_update: <2013-02-21 Thu>
 sudo rm /var/lib/apt/lists/lock
 
+sudo apt-get autoremove -y
+sudo aptitude remove
+sudo aptitude autoclean -y
+sudo aptitude clean -y
+
 sudo apt-get update -y
 sudo aptitude update -y
 sudo apt-get upgrade -y
@@ -13,10 +18,6 @@ sudo aptitude safe-upgrade -y
 sudo apt-get install -f
 sudo aptitude install -f
 
-sudo apt-get autoremove -y
-sudo aptitude remove
-sudo aptitude autoclean -y
-sudo aptitude clean -y
 
 sudo apt-get install apt-file -y
 apt-file update
