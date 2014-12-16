@@ -76,7 +76,7 @@ function pdfCompress(){
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dColorImageResolution=150 -dNOPAUSE  -dBATCH  -sOutputFile=${1%\.pdf}-compressed.pdf $1
 }
 function texDiff(){
-echo "latexdiff old new > diff""
+echo "latexdiff old new > diff"
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
 function texBuild(){
@@ -94,6 +94,7 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 echo "Success!"
+evince $dir/$filea
 }
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
