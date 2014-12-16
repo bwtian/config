@@ -98,6 +98,8 @@ echo "Success!"
 okular $dir/$filename.pdf
 }
 function texClean(){
+dir=build
+filename=$1    
 texTemp="*.aux "
 for i in $texTemp; do rm -rf $i; done
 
