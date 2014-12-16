@@ -53,4 +53,10 @@
     <url>ssh://git@github.com/bwtian/p1402tex</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdtex</name>
+    <identifier>29b25289c5f162d60a69e42bb09a0a0b70674cb1</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phdtex</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
