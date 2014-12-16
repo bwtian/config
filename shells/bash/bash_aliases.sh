@@ -86,7 +86,7 @@ function texWc(){
 dir=build
 filename=$1
 bydetex=detex -n  $1 | sed '/^\s*$/d' | wc 
-echo "This"
+echo "World counts by detex:"
 }
 
 
