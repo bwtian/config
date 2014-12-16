@@ -87,7 +87,7 @@ function texWc(){
 echo "World counts by detex and wc:lines, words, characters:" 
 detex -n  $1 | sed '/^\s*$/d' | wc
 echo "World counts by texcout"
-texcout $1
+texcount $1
 }
 function htmlWc(){
 echo "World counts by texcount.pl html:" 
