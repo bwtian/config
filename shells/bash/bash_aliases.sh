@@ -115,12 +115,6 @@ echo "Success!"
 okular $dir/$filename.pdf
 }
 
-function texWc(){
-dir=build
-filename=$1
-
-
-}
 
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
