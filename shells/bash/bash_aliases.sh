@@ -65,8 +65,8 @@ alias web='chromium-browser'
 alias men='mendeleydesktop'
 #### Tex and PDF
 function pdf2html(){
-pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
-abiword --to=doc ${1%\.pdf}.html
+pdftohtml -noframes -q -p -c $1 ${1%\.pdf}.html
+abiword --to=doc ${1%\.pdf}-ab.html
 }
 function pdfCompress(){
 #gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${1%\.pdf}-compressed.pdf $1
