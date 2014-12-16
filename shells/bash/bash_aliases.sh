@@ -98,8 +98,9 @@ pdftotext $1 - | tr -d '.' | wc -w
 pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]*$" > words
 #gedit words
 pdftotext $1 - | tr " " "\n" | grep -f words | wc
+echo "convert to ps by pdf2ops and ps2ascill then count"
 pdftops $1
-ps2ascii ${1%\.pdf}| wc 
+ps2ascii ${1%\.ps}| wc 
 }
 
 
