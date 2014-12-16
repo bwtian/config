@@ -71,7 +71,8 @@ abiword --to=doc ${1%\.pdf}-img.html
 function pdfCompress(){
 #gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${1%\.pdf}-compressed.pdf $1
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true
--dColorImageResolution=150 -dNOPAUSE  -dBATCH  -sOutputFile=${1%\.pdf}-compressed.pdf $1
+   -dColorImageResolution=150 -dNOPAUSE  -dBATCH
+   -sOutputFile=${1%\.pdf}-compressed.pdf $1
 }
 function texDiff(){
 echo "latexdiff old new > diff"
