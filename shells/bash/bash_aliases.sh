@@ -85,7 +85,7 @@ function tex2txt(){
 function texWc(){
 dir=build
 filename=$1
-detex -n  $1 | sed '/^\s*$/d' 
+detex -n  $1 | sed '/^\s*$/d' | wc 
 
 }
 
