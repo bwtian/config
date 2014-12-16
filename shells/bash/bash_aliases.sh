@@ -110,7 +110,7 @@ ps2ascii ${1%\.pdf}.ps | wc
 function texClean(){
 dir=build
 filename=$1    
-texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.d *.fls
+texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.dvi *.fls
          *.glo *.glg *.gls *.idx *.ilg *.ind *.ist *.lof *.log *.lot *.out*
          *.nlo *.nls *.synctex.gz *.toc* *.fdb_latexmk")
 texOut=("${filename}.pdf" "${filename}.ps" "${filename}.dvi")
