@@ -83,14 +83,15 @@ function texBuild(){
 mkdir -p build
 dir=build
 filename=$1
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+
 bibtex $1
 makeglossaries $1
 mkindex $1
 pdflatex $1
 pdflatex $1
-	echo "Compiling your PhD Thesis...please wait...!"
-	pdflatex -interaction=nonstopmode $filename.tex
+echo "Compiling your Tex to build folder...please wait...!"
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+pdflatex -interaction=nonstopmode $filename.tex
 	bibtex $filename.aux 	
 	makeindex $filename.aux
 	makeindex $filename.idx
