@@ -83,7 +83,7 @@ function texBuild(){
 mkdir -p build
 dir=build
 filename=$1
-pdflatex -synctex=1 -interaction=nonstopmode $1.tex
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $1.tex
 bibtex $1
 makeglossaries $1
 mkindex $1
