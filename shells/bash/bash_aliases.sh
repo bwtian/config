@@ -91,6 +91,10 @@ detex -n  $1 | sed '/^\s*$/d' | wc
 echo "World counts by texcount.pl html:" 
 texcount.pl -html -inc -incbib $filename.html
 }
+function pdfWc(){
+echo "PDF words counts by pdftotex and wd"
+    pdftotext $1 - | wc -w
+}
 
 
 
