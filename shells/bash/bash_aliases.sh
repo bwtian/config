@@ -114,6 +114,8 @@ okular $dir/$filename.pdf
 }
 
 function texWc(){
+dir=build
+filename=$1
 
 
 }
