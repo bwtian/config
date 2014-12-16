@@ -97,7 +97,6 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 	makeindex $filename.nlo -s nomencl.ist -o $filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 	makeindex $filename.nlo -s nomencl.ist -o $filename.nls
-	pdflatex -interaction=nonstopmode $filename.tex
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 	echo "Success!"
 }
