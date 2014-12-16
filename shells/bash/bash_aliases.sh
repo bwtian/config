@@ -86,7 +86,7 @@ function texWc(){
 dir=build
 echo "World counts by detex and wc lines, words, characters:" 
 detex -n  $1 | sed '/^\s*$/d' | wc
-echo "World counts by detex and wc lines, words, charactersr:" 
+echo "World counts by texcount.pl html:" 
 texcount.pl -html -inc -incbib $filename.html
 }
 
