@@ -79,6 +79,20 @@ function texDiff(){
 echo "latexdiff old new > diff"
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
+
+function texClean(){
+dir=build
+filename=$1    
+texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.d *.fls
+         *.glo *.glg *.gls *.idx *.ilg *.ind *.ist *.lof *.log *.lot *.out*
+         *.nlo *.nls *.synctex.gz *.toc*")
+texOut=("${filename}.pdf" "${filename}.ps" "${filename}.dvi")
+for i in $texTemp; do rm -rf $i; done
+for i in $texTemp; do rm -rf $dir/$i; done
+for i in $texOut; do rm -rf $i; done
+for i in $texOut; do rm -rf $dir/$i; done
+}
+
 function texBuild(){
 mkdir -p build
 dir=build
@@ -97,18 +111,7 @@ echo "Success!"
 # evince $dir/$filename.pdf
 okular $dir/$filename.pdf
 }
-function texClean(){
-dir=build
-filename=$1    
-texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.d *.fls
-         *.glo *.glg *.gls *.idx *.ilg *.ind *.ist *.lof *.log *.lot *.out*
-         *.nlo *.nls *.synctex.gz *.toc*")
-texOut=("${filename}.pdf" "${filename}.ps" "${filename}.dvi")
-for i in $texTemp; do rm -rf $i; done
-for i in $texTemp; do rm -rf $dir/$i; done
-for i in $texOut; do rm -rf $i; done
-for i in $texOut; do rm -rf $dir/$i; done
-}
+
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
     file=$1
