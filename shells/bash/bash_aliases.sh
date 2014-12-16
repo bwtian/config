@@ -86,6 +86,7 @@ function texWc(){
     #M-x tex-count-words
 echo "World counts by detex and wc:lines, words, characters:" 
 detex -n  $1 | sed '/^\s*$/d' | wc
+echo ""
 texcout $1
 }
 function htmlWc(){
