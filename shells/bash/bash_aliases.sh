@@ -102,9 +102,11 @@ dir=build
 filename=$1    
 texTemp="*~  *#* *.aux *.bbl *.blg *.d *.fls *.ilg *.ind *.toc* *.lot *.lof *.log
          *.idx *.out* *.nlo *.nls *.synctex.gz"
+texOut="$filename.pdf $filename.ps $filename.dvi"
 for i in $texTemp; do rm -rf $i; done
 for i in $texTemp; do rm -rf $dir/$i; done
-
+for i in $texOut; do rm -rf $i; done
+for i in $texOut; do rm -rf $dir/$i; done
 }
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
