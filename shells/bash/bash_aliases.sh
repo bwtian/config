@@ -88,6 +88,7 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 	bibtex     $dir/$filename.aux 	
 	makeindex  $dir/$filename.aux
 	makeindex  $dir/$filename.idx
+        makeglossaries $dir/$filename
 	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
