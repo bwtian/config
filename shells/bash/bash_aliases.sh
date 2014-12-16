@@ -100,7 +100,7 @@ okular $dir/$filename.pdf
 function texClean(){
 dir=build
 filename=$1    
-texTemp="*~  *#* *.aux *.bbl *.blg *.d *.fls *.ilg *.ind *.toc* *.lot *.lof *.log
+texTemp="*~  *#* *.aux *.acn *.bbl *.blg *.d *.fls *.ilg *.ind *.toc* *.lot *.lof *.log
          *.idx *.out* *.nlo *.nls *.synctex.gz"
 texOut="$filename.pdf $filename.ps $filename.dvi"
 for i in $texTemp; do rm -rf $i; done
