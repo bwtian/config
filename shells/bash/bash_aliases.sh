@@ -99,7 +99,7 @@ pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]*$" > words
 #gedit words
 pdftotext $1 - | tr " " "\n" | grep -f words | wc
 pdftops $1
-ps2ascii file.ps|wc -w
+ps2ascii ${1%\.pdf}|wc -w
 }
 
 
