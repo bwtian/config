@@ -83,6 +83,7 @@ function tex2txt(){
  sed '/^\s*$/d' > ${1%\.tex}.txt
 }
 function texWc(){
+    #M-x tex-count-words
 dir=build
 filename=$1
 echo "World counts by detex and wc lines, words, characters:" 
