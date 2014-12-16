@@ -89,7 +89,16 @@ makeglossaries $1
 mkindex $1
 pdflatex $1
 pdflatex $1
-
+	echo "Compiling your PhD Thesis...please wait...!"
+	pdflatex -interaction=nonstopmode $filename.tex
+	bibtex $filename.aux 	
+	makeindex $filename.aux
+	makeindex $filename.idx
+	makeindex $filename.nlo -s nomencl.ist -o $filename.nls
+	pdflatex -interaction=nonstopmode $filename.tex
+	makeindex $filename.nlo -s nomencl.ist -o $filename.nls
+	pdflatex -interaction=nonstopmode $filename.tex
+	echo "Success!"
 }
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
