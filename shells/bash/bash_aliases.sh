@@ -94,7 +94,9 @@ texcount.pl -html -inc -incbib $filename.html
 function pdfWc(){
 echo "PDF words counts by pdftotex and wc:lines, words, characters:"
 pdftotext $1 - | wc -w
-pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]" > words | 
+pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]" > words
+gedit words
+
 }
 
 
