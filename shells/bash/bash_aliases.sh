@@ -82,6 +82,15 @@ function tex2txt(){
  detex -n  $1 |
  sed '/^\s*$/d' > ${1%\.tex}.txt
 }
+function texWc(){
+dir=build
+filename=$1
+detex -n  $1 | sed '/^\s*$/d' 
+
+}
+
+
+
 function texClean(){
 dir=build
 filename=$1    
