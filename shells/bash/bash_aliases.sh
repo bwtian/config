@@ -76,7 +76,7 @@ function pdfCompress(){
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dColorImageResolution=150 -dNOPAUSE  -dBATCH  -sOutputFile=${1%\.pdf}-compressed.pdf $1
 }
 function texDiff(){
-    # latexdiff old new > diff
+echo "latexdiff old new > diff"
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
 function texBuild(){
