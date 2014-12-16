@@ -84,8 +84,8 @@ function tex2txt(){
 }
 function texWc(){
 dir=build
-bydetex="${detex -n  $1 | sed '/^\s*$/d' | wc}" 
-echo "World counts by detex and wc lines, words, characters: 
+detex -n  $1 | sed '/^\s*$/d' | wc} 
+echo "World counts by detex and wc lines, words, characters:" 
 
 }
 
