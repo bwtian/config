@@ -82,6 +82,7 @@ latexdiff $1 $2 > ${2%\.tex}-diff.tex
 function texBuild(){
 mkdir -p build
 dir=build
+filename=$1
 pdflatex -synctex=1 -interaction=nonstopmode $1
 bibtex $1
 makeglossaries $1
