@@ -92,8 +92,9 @@ echo "World counts by texcount.pl html:"
 texcount.pl -html -inc -incbib $filename.html
 }
 function pdfWc(){
-echo "PDF words counts by pdftotex and wc:"
-    pdftotext $1 - | wc -w
+echo "PDF words counts by pdftotex and wc:lines, words, characters:"
+pdftotext $1 - | wc -w
+
 }
 
 
