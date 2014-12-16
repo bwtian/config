@@ -63,10 +63,7 @@ alias o='xdg-open .' #gnome-open .
 alias r='rstudio'
 alias web='chromium-browser'
 alias men='mendeleydesktop'
-function tex2txt(){
- detex -n  $1 |
- sed '/^\s*$/d' > ${1%\.tex}.txt
-}
+
 function pdf2html(){
 pdftohtml -noframes -q -p -c $1 ${1%\.pdf}-img.html
 abiword --to=doc ${1%\.pdf}-img.html
@@ -79,7 +76,10 @@ function texDiff(){
 echo "latexdiff old new > diff"
 latexdiff $1 $2 > ${2%\.tex}-diff.tex
 }
-
+function tex2txt(){
+ detex -n  $1 |
+ sed '/^\s*$/d' > ${1%\.tex}.txt
+}
 function texClean(){
 dir=build
 filename=$1    
