@@ -88,6 +88,7 @@ makeglossaries $1
 mkindex $1
 pdflatex $1
 pdflatex $1
+
 }
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
