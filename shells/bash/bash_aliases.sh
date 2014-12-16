@@ -84,12 +84,12 @@ function tex2txt(){
 }
 function texWc(){
     #M-x tex-count-words
-dir=build
-filename=$1
 echo "World counts by detex and wc:lines, words, characters:" 
 detex -n  $1 | sed '/^\s*$/d' | wc
+}
+function htmlWc(){
 echo "World counts by texcount.pl html:" 
-texcount.pl -html -inc -incbib $filename.html
+texcount -html -inc -incbib $filename.html
 }
 function pdfWc(){
 echo "PDF words counts by pdftotex and wc:lines, words, characters:"
@@ -100,7 +100,7 @@ pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]*$" > words
 pdftotext $1 - | tr " " "\n" | grep -f words | wc
 echo "convert to ps by pdf2ops and ps2ascill then count"
 pdftops $1
-ps2ascii ${1%\.ps}| wc 
+ps2ascii ${1%\.pdf}.ps | wc 
 }
 
 
