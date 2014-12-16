@@ -91,10 +91,10 @@ pdflatex $1
 pdflatex $1
 echo "Compiling your Tex to build folder...please wait...!"
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-	bibtex $dir/$filename.aux 	
-	makeindex $filename.aux
-	makeindex $filename.idx
-	makeindex $filename.nlo -s nomencl.ist -o $filename.nls
+	bibtex     $dir/$filename.aux 	
+	makeindex  $dir/$filename.aux
+	makeindex  $dir/$filename.idx
+	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 	makeindex $filename.nlo -s nomencl.ist -o $filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
