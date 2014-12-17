@@ -59,10 +59,4 @@
     <url>ssh://git@bitbucket.org/bwtian/phdtex</url>
     <backend>Git</backend>
   </folder>
-  <folder>
-    <name>TIR (2)</name>
-    <identifier>00360d1e524df9879e7cddafd133eaadc3366ebb</identifier>
-    <url>ssh://git@github.com/bwtian/TIR</url>
-    <backend>Git</backend>
-  </folder>
 </sparkleshare>
