@@ -54,7 +54,7 @@ alias dt='dropbox stop'
 alias dfix="echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p"
 alias s='sparkleshare start'
 alias st='sparkleshare stop'
-alias sfix='rm -rf .'
+alias sfix='rm -rf ./.git/index.lock'
 alias freem='sudo echo 3 > /proc/sys/vm/drop_caches'
 alias du1='du -hd1 | sort -h'
 alias du2='du -hd2 | sort -h'
