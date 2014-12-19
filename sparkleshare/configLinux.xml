@@ -48,7 +48,7 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>p1402tex</name>
+    <name>p1402tex (copy)</name>
     <identifier>4e20b79ce78f2c075d984f2c168454e86f85afa9</identifier>
     <url>ssh://git@github.com/bwtian/p1402tex</url>
     <backend>Git</backend>
