@@ -27,7 +27,7 @@ for i in $ppas; do sudo add-apt-repository $i; done
 }
 function uStart(){
     apps="ubuntu-restricted-extras flashplugin-installer  openjdk-7-jre
-          unity-tweak-tool  nautilus-open-terminal  rdesktop
+          unity-tweak-tool  nautilus-open-terminal  rdesktop oku
           vlc fping nmap synaptic fdupes catfish samba  abiword chromium-browser
           nautilus-dropbox  sparkleshare  git  Curl  emacs graphviz
           texstudio texlive-full texlive-latex-pandoc
