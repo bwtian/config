@@ -59,4 +59,10 @@
     <url>ssh://git@bitbucket.org/bwtian/phdtex</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>igarss15</name>
+    <identifier>baf7e9c539a4cdc1949971d8c204631f75fb724c</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/igarss15</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
