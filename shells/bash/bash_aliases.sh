@@ -55,7 +55,7 @@ alias dfix="echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.co
 alias freem='sudo echo 3 > /proc/sys/vm/drop_caches'
 alias du1='du -hd1 | sort -h'
 alias du2='du -hd2 | sort -h'
-alias i='sudo apt-get install '
+alias i='sudo apt-get install -y'
 alias o='xdg-open .' #gnome-open .
 alias r='rstudio'
 alias s='sparkleshare start'
