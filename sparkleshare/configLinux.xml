@@ -65,4 +65,10 @@
     <url>ssh://git@bitbucket.org/bwtian/igarss15</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>ch4</name>
+    <identifier>31956a82c357599055db2cf231e2bc4c24dae7f4</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/ch4</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
