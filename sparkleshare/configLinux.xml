@@ -71,4 +71,10 @@
     <url>ssh://git@bitbucket.org/bwtian/ch4</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>cv</name>
+    <identifier>afc4739c04d05646f0d4fce608d259c9fbdc7215</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/cv</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
