@@ -77,4 +77,10 @@
     <url>ssh://git@bitbucket.org/bwtian/cv</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>texTemplate</name>
+    <identifier>640166aaf1fe1fa493b79b2665a12dff0252185a</identifier>
+    <url>ssh://git@github.com/bwtian/texTemplate</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
