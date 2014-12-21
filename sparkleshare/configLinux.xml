@@ -77,10 +77,4 @@
     <url>ssh://git@bitbucket.org/bwtian/cv</url>
     <backend>Git</backend>
   </folder>
-  <folder>
-    <name>tesss</name>
-    <identifier>640166aaf1fe1fa493b79b2665a12dff0252185a</identifier>
-    <url>ssh://git@github.com/bwtian/elsevier</url>
-    <backend>Git</backend>
-  </folder>
 </sparkleshare>
