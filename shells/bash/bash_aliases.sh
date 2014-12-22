@@ -88,8 +88,8 @@ echo "World counts by texcout"
 texcount $1
 }
 
-function phdLink(){
-linkfrom=~/SparkleShare/phdtex/Contents
+function texLink(){
+linkfrom=~/SparkleShare/phdtex/Contents/
 linkto=$1
 files=$(.\ls -lR $linkfrom)
 for i in $files; do ln -s $i $1; done 
