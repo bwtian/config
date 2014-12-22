@@ -30,7 +30,8 @@ function uStart(){
           unity-tweak-tool  nautilus-open-terminal  rdesktop okular
           vlc fping nmap synaptic fdupes catfish samba  abiword chromium-browser
           nautilus-dropbox  sparkleshare  git  Curl  emacs graphviz
-          texstudio texlive-full texlive-latex-pandoc biber
+          texstudio texlive-full texlive-latex-pandoc biber texlive-latex-base
+         texlive-latex-extra texlive-bibtex-extra texlive-lang-french texlive-science texlive-fonts-recommended latexmk biblatex
           qgis  gdal-bin libgdal-dev r-base "
     for i in $apps; do sudo apt-get build-dep -y $i; done
     for i in $apps; do sudo apt-get install -y $i; done
