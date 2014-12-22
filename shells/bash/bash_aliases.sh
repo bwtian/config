@@ -90,7 +90,7 @@ texcount $1
 
 function texLink(){
     unalias ln
-linkfrom=~/SparkleShare/phdtex/Contents/
+linkfrom=~/SparkleShare/phdtex/Contents
 linkto=$1
 #files=$(ls -lR $linkfrom)
 files=$(find . -type f -printf "%T@ %p\n" | sort -nr | cut -d\  -f2-)
