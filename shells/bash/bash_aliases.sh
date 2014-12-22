@@ -87,6 +87,13 @@ detex -n  $1 | sed '/^\s*$/d' | wc
 echo "World counts by texcout"
 texcount $1
 }
+
+function phdLink(){
+linkfrom=~/SparkleShare/phdtex/Contents
+linkto=$1
+files=$(.\ls -lR $linkfrom)
+for i in $files; do ln -s $i $1; done 
+}
 function htmlWc(){
 echo "World counts by texcount.pl html:" 
 texcount -html -inc -incbib $filename.html
