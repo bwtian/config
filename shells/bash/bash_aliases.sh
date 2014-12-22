@@ -89,9 +89,10 @@ texcount $1
 }
 
 function texLink(){
+    unalias ln
 linkfrom=~/SparkleShare/phdtex/Contents/
 linkto=$1
-files=$(\ls -lR $linkfrom)
+files=$(ls -lR $linkfrom)
 for i in $files; do ln -s $i $1; done 
 }
 function htmlWc(){
