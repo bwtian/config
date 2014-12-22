@@ -93,7 +93,7 @@ function texLink(){
 linkfrom=~/SparkleShare/phdtex/Contents/
 linkto=$1
 #files=$(ls -lR $linkfrom)
-files=find . -type f -printf "%T@ %p\n" | sort -nr | cut -d\  -f2-
+files=$(find . -type f -printf "%T@ %p\n" | sort -nr | cut -d\  -f2-)
 for i in $files; do ln -s $i $1; done 
 }
 function htmlWc(){
