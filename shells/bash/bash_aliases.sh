@@ -147,7 +147,7 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 function texBB(){
 mkdir -p build
 dir=build
-filename=${1%\.tex}
+filename=${1:-main}%\.tex
 echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
@@ -167,11 +167,11 @@ okular $dir/$filename.pdf
 function texB(){
 mkdir -p build
 dir=build
-filename=${1%\.tex}
+filename=${1:-main.tex}
 echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-        bibter     $dir/$filename
+        biber  --output_directory=$dir $filename
 	makeindex  $dir/$filename.aux
 	makeindex  $dir/$filename.idx
         makeglossaries -d $dir $filename
