@@ -151,7 +151,7 @@ filename=${1%\.tex}
 echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-for i in `ls *.aux`; do bibtex $i; done
+for i in `ls $dir/*.aux`; do bibtex $i; done
 bibtex     $dir/$filename.aux 	
 	makeindex  $dir/$filename.aux
 	makeindex  $dir/$filename.idx
