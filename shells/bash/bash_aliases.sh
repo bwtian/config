@@ -150,10 +150,9 @@ dir=build
 filename=${1%\.tex}
 echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir
-$filename.tex
-       
-	bibtex     $dir/$filename.aux 	
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+for i in `ls *.aux`; do bibtex $i; done
+bibtex     $dir/$filename.aux 	
 	makeindex  $dir/$filename.aux
 	makeindex  $dir/$filename.idx
         makeglossaries -d $dir $filename
