@@ -167,7 +167,7 @@ okular $dir/$filename.pdf
 function texB(){
 mkdir -p build
 dir=build
-filename=${1%\.tex:-main.tex%\.tex}
+filename=${1:-main}
 echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
