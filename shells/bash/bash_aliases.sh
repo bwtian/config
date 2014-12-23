@@ -165,6 +165,7 @@ okular $dir/$filename.pdf
 }
 
 
+
 function mvt(){
     echo "mvt Usage: mv file.ext to file_yyyymmdd-hhmmss.ext"
     file=$1
