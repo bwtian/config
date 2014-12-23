@@ -180,8 +180,8 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 echo "Success!"
-# evince $dir/$filename.pdf
-okular $dir/$filename.pdf
+evince $dir/$filename.pdf
+#okular $dir/$filename.pdf
 }
 
 
