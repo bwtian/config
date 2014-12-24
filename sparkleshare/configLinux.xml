@@ -54,39 +54,9 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>phdtex</name>
-    <identifier>29b25289c5f162d60a69e42bb09a0a0b70674cb1</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/phdtex</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>igarss15</name>
     <identifier>baf7e9c539a4cdc1949971d8c204631f75fb724c</identifier>
     <url>ssh://git@bitbucket.org/bwtian/igarss15</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>ch4</name>
-    <identifier>31956a82c357599055db2cf231e2bc4c24dae7f4</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/ch4</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>cv</name>
-    <identifier>afc4739c04d05646f0d4fce608d259c9fbdc7215</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/cv</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>texTemplate</name>
-    <identifier>640166aaf1fe1fa493b79b2665a12dff0252185a</identifier>
-    <url>ssh://git@github.com/bwtian/texTemplate</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>note</name>
-    <identifier>f567661cae25ea258e5e29b0c3c9367e1e34f9a6</identifier>
-    <url>ssh://git@github.com/bwtian/note</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
