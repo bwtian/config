@@ -95,4 +95,10 @@
     <url>ssh://git@github.com/bwtian/p1410iamgCode</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdcode</name>
+    <identifier>ed5cfd82a4d86810f8a86acb5d75b20ad5db549c</identifier>
+    <url>ssh://git@github.com/bwtian/phdcode</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
