@@ -128,6 +128,7 @@ texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.dvi *.fl
 #texOut=("${filename}.pdf" "${filename}.ps" "${filename}.dvi")
 for i in $texTemp; do rm -rf $i; done
 for i in $texTemp; do rm -rf $dir/$i; done
+for i in $texTemp; do rm -rf $dir2/$i; done
 #for i in $texOut; do rm -rf $i; done
 #for i in $texOut; do rm -rf $dir/$i; done
 }
