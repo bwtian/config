@@ -336,16 +336,16 @@ alias findmd5='find . -type f -print0 | xargs -0 md5sum | sort | uniq -w32 --all
 # ##############################################################################
 # tClearup cleanup files not in a folder folders
 # ##############################################################################
-clearup(){
+tClearup(){
     find . -empty -type d -delete #delete empty folder
     find . -empty -type f -delete #delete empty folder
     dir=" 00data 01pdf 02doc 03pic 04audio 05video 06exe 07zip 08code 09tex"
-    for i in $dir; do mkdir $i; done
-    pdf="*.pdf"
-    tex= "*.tex *.Rnw"
-    doc="*.doc *.docx *.xls *.xlsx *.ppt *.pptx *.htm *.html"
-    pic="*.png *.jpg *.jpeg *.bmp *.eps *.gif *.svg"
-    vecData="*.csv *.xml *.kml *.kmz *.tiff *.nc *.shp *.e00"
+    for i in $dir; do mkdir -p $i; done
+    pdf="*.pdf *.ps *.dvi *.eps"
+    tex=("*.tex$" "*.Rnw$")
+    doc="*.doc *.docx *.ppt *.pptx *.htm *.html"
+    pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
+    vecData="*.xml *.kml *.kmz *.tiff *.nc *.shp *.e00, *.csv *.xls *.xlsx "
     grdData="*.tif *.tiff *.img *.dem *.geotiff "
     zip="*.zip *.7z *.tar *.rar *.gz"
     exe="*.exe *.msi *.deb"
@@ -366,35 +366,7 @@ clearup(){
     for i in $grdData; do mv -f $i 00data; done
     find . -empty -type d -delete
     # #TODO same name file 
-}
-tclearup(){
-    find . -empty -type d -delete #delete empty folder
-    dir=" 0data 1pdf 2doc 3pic 4audio 5video 6exe 7zip 8code"
-    for i in $dir; do mkdir $i; done
-    pdf="*.pdf"
-    doc="*.doc *.docx *.xls *.xlsx *.ppt *.pptx *.htm *.html"
-    pic="*.png *.jpg *.jpeg *.bmp *.eps *.gif"
-    vecData="*.csv *.xml *.kml *.kmz *.tiff *.nc *.shp *.e00"
-    grdData="*.tif *.tiff *.img *.dem *.geotiff "
-    zip="*.zip *.7z *.tar *.rar *.gz"
-    exe="*.exe *.msi *.deb"
-    video="*.mp4 *.avi *.srt"
-    audio="*.mp3 *.wav "
-    code="*.R *.py *.c *.m"
-    
-    for i in $pdf; do mv $i 1pdf; done
-    for i in $doc; do mv $i 2doc; done
-    for i in $pic; do mv $i 3pic; done
-
-    for i in $zip; do mv $i 7zip; done
-    for i in $exe; do mv $i 6exe; done
-    for i in $video; do mv $i 5video; done
-    for i in $audio; do mv $i 4audio; done
-    for i in $vecData; do mv $i 0data; done
-    for i in $grdData; do mv $i 0data; done
-    find . -empty -type d -delete
-    #TODO same name file 
-}
+}    
 clearfile(){
 file=$(\ls .)
 filename=${file%.*}
