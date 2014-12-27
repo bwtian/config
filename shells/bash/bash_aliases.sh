@@ -348,7 +348,7 @@ tClearup(){
     tex="*.tex *.Rnw"
     doc="*.doc *.docx *.odc *.ppt *.pptx *.htm *.html *.hml"
     pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
-    sta="*.sas *.dat *.csv *.txt *.Rds *.Rdata *.db *.sdb"
+    staData="*.sas *.dat *.csv *.txt *.Rds *.Rdata *.db *.sdb"
     vecData="*.xml *.kml *.kmz *.tiff *.nc *.shp *.e00, *.csv *.xls *.xlsx "
     grdData="*.tif *.tiff *.img *.dem *.geotiff "
     zip="*.zip *.7z *.tar *.rar *.gz"
@@ -368,6 +368,7 @@ tClearup(){
     for i in $code; do mv -f $i 08code; done
     for i in $vecData; do mv  -f $i 00data; done
     for i in $grdData; do mv -f $i 00data; done
+    for i in $staData; do mv -f $i 00data; done
     find . -empty -type d -delete
     # #TODO same name file 
 }    
