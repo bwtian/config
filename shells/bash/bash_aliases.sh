@@ -363,11 +363,8 @@ tClearup(){
     for i in $pic; do mv -f $i 05pic; done
     for i in $audio; do mv -f $i 06audio; done
     for i in $video; do mv -f $i 07video; done
-    for i in $zip; do mv -f $i 07zip; done
-    for i in $exe; do mv -f $i 06exe; done
-
-
-
+    for i in $zip; do mv -f $i 08backzip; done
+    for i in $exe; do mv -f $i 09exe; done
     for i in $vecData; do mv  -f $i 00data; done
     for i in $grdData; do mv -f $i 00data; done
     for i in $staData; do mv -f $i 00data; done
