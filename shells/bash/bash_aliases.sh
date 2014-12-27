@@ -348,7 +348,7 @@ tClearup(){
     tex=("*.tex$" "*.Rnw$")
     doc="*.doc *.docx *.ppt *.pptx *.htm *.html"
     pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
-    sta="*.sas *.dat *.csv"
+    sta="*.sas *.dat *.csv *.txt *.Rds *.Rdata"
     vecData="*.xml *.kml *.kmz *.tiff *.nc *.shp *.e00, *.csv *.xls *.xlsx "
     grdData="*.tif *.tiff *.img *.dem *.geotiff "
     zip="*.zip *.7z *.tar *.rar *.gz"
