@@ -66,12 +66,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>phdcode</name>
-    <identifier>ed5cfd82a4d86810f8a86acb5d75b20ad5db549c</identifier>
-    <url>ssh://git@github.com/bwtian/phdcode</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>glossaR (2)</name>
     <identifier>434fdff5e69bfba49785a3d574bc76a433777279</identifier>
     <url>ssh://git@github.com/bwtian/glossaR</url>
