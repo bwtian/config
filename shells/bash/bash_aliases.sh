@@ -356,11 +356,11 @@ tClearup(){
     video="*.mp4 *.avi *.srt"
     audio="*.mp3 *.wav "
     code="*.R *.py *.c *.m .r"
-    
-    for i in $pdf; do mv -f $i 01pdf; done
-    for i in $doc; do mv -f $i 02doc; done
-    for i in $pic; do mv -f $i 03pic; done
-    for i in $tex; do mv -f $i 01tex; done
+    for i in $tex; do mv -f $i 01tex; done    
+    for i in $pdf; do mv -f $i 03pdf; done
+    for i in $doc; do mv -f $i 04doc; done
+    for i in $pic; do mv -f $i 05pic; done
+
     for i in $zip; do mv -f $i 07zip; done
     for i in $exe; do mv -f $i 06exe; done
     for i in $video; do mv -f $i 05video; done
