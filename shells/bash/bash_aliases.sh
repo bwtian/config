@@ -357,6 +357,7 @@ tClearup(){
     audio="*.mp3 *.wav "
     code="*.R *.py *.c *.m .r"
     for i in $tex; do mv -f $i 01tex; done    
+    for i in $code; do mv -f $i 02code; done
     for i in $pdf; do mv -f $i 03pdf; done
     for i in $doc; do mv -f $i 04doc; done
     for i in $pic; do mv -f $i 05pic; done
@@ -365,7 +366,7 @@ tClearup(){
     for i in $exe; do mv -f $i 06exe; done
     for i in $video; do mv -f $i 05video; done
     for i in $audio; do mv -f $i 04audio; done
-    for i in $code; do mv -f $i 08code; done
+
     for i in $vecData; do mv  -f $i 00data; done
     for i in $grdData; do mv -f $i 00data; done
     for i in $staData; do mv -f $i 00data; done
