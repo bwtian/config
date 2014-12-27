@@ -342,7 +342,7 @@ alias findmd5='find . -type f -print0 | xargs -0 md5sum | sort | uniq -w32 --all
 tClearup(){
     find . -empty -type d -delete #delete empty folder
     find . -empty -type f -delete #delete empty folder
-    dir=" 00data 01pdf 02doc 03pic 04audio 05video 06exe 07zip 08code 09tex"
+    dir=" 00data 01pdf 02doc 03pic 04audio 05video 06exe 07zip 08code 01tex"
     for i in $dir; do mkdir -p $i; done
     pdf="*.pdf *.ps *.dvi *.eps"
     tex="*.tex *.Rnw"
