@@ -509,7 +509,7 @@ snap()
     do
     NOW=$(date +%Y-%m-%d-%H%M%S)
     #scrot -d int  'filename.jpg|png' -e 'mv $f /file/path/to/store/screenshots'
-    scrot -d ${1:-300} 'Autosnap_'$NOW'.png' -e 'mv $f ~/'
+    scrot -d ${1:-300} 'Autosnap_'$NOW'.png' -e 'mv $f ~'
     done
 }
 # mp32wav() {
