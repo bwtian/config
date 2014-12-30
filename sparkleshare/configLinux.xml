@@ -77,4 +77,10 @@
     <url>ssh://git@bitbucket.org/bwtian/iamg14</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>idea</name>
+    <identifier>d9774f6344df1619259eaabc81e14de1c7181e68</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/idea</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
