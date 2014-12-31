@@ -356,7 +356,7 @@ tClearup(){
     exe="*.exe *.msi *.deb *.ppd"
     video="*.mp4 *.avi *.srt"
     audio="*.mp3 *.wav "
-    code="*.R *.py *.c *.m *.r"
+    code="*.R *.py *.c *.m *.r *.org"
     for i in $tex; do mv -f $i 01tex; done    
     for i in $code; do mv -f $i 02code; done
     for i in $pdf; do mv -f $i 03pdf; done
