@@ -353,7 +353,7 @@ tClearup(){
     vecData="*.xml *.kml *.kmz *.tiff *.nc *.shp *.shx *.dbf *.prj *.e00, *.csv *.xls *.xlsx "
     grdData="*.tif *.tiff *.img *.dem *.geotiff "
     zip="*.zip *.7z *.tar *.rar *.gz *.old *.bak *.back *.backup"
-    exe="*.exe *.msi *.deb"
+    exe="*.exe *.msi *.deb *.ppd"
     video="*.mp4 *.avi *.srt"
     audio="*.mp3 *.wav "
     code="*.R *.py *.c *.m *.r"
