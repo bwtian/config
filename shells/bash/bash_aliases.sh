@@ -167,7 +167,7 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 echo "Success!"
 # evince $dir/$filename.pdf
 cp  $dir/$filename.pdf .
-okular $dir/$filename.pdf
+okular $filename.pdf
 }
 function texB(){
 mkdir -p build
