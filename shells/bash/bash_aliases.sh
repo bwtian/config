@@ -166,6 +166,7 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 echo "Success!"
 # evince $dir/$filename.pdf
+cp -f $dir/$filename.pdf 
 okular $dir/$filename.pdf
 }
 function texB(){
