@@ -344,9 +344,9 @@ tClearup(){
     find . -empty -type f -delete #delete empty folder
     dir=" 00data  01tex 02code 03pdf 04doc 05pic 06audio 07video 08backzip 09exe 10ppt"
     for i in $dir; do mkdir -p $i; done
-    pdf="*.pdf *.ps *.dvi *.eps"
+    pdf="*.pdf *.ps *.dvi *.eps *.PDF"
     ppt="*.ppt *.pptx$"
-    tex="*.tex *.Rnw"
+    tex="*.tex *.Rnw *.bib"
     doc="*.doc* *.docx* *.odc *.ppt *.pptx *.htm *.html *.hml"
     pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
     staData="*.sas *.dat *.csv *.txt *.Rds *.Rdata *.db *.sdb"
