@@ -346,7 +346,7 @@ tClearup(){
     for i in $dir; do mkdir -p $i; done
     pdf="*.pdf *.ps *.dvi *.eps"
     tex="*.tex *.Rnw"
-    doc="*.doc *.docx *.odc *.ppt *.pptx *.htm *.html *.hml"
+    doc="*.doc* *.docx* *.odc *.ppt *.pptx *.htm *.html *.hml"
     pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
     staData="*.sas *.dat *.csv *.txt *.Rds *.Rdata *.db *.sdb"
     vecData="*.xml *.kml *.kmz *.tiff *.nc *.shp *.shx *.dbf *.prj *.e00, *.csv *.xls *.xlsx "
