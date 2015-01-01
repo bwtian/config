@@ -121,9 +121,12 @@ dir=build
 dir2=auto
 filename=$1    
 texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.dvi *.fls
-         *.glo *.glg *.gls *.idx *.ilg *.ind *.ist *.lof *.log *.lot *.out *.equ
-         *.lsg *.sot *.stn *.xdy *.run.xml *.slg *.el
+         *.glo *.glg *.gls *.exgls *.glsdefs *.grsym  *.subsc *.exacr 
+         *.dimnb *.excro *.exsbl *.grsbl  *.subcr *.dimnu  *.exglo  *.exsym	 
+         *.idx *.ilg *.ind *.ist *.lof *.log *.lot *.out *.equ
+         *.lsg *.sot *.stn *.xdy *.run.xml *.slg *.el 
          *.nlo *.nls *.synctex.gz *.toc* *.fdb_latexmk, main.pdf test.pdf")
+
 
 #texOut=("${filename}.pdf" "${filename}.ps" "${filename}.dvi")
 for i in $texTemp; do rm -rf $i; done
