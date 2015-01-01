@@ -66,7 +66,7 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>glossaR (2)</name>
+    <name>glossaR</name>
     <identifier>434fdff5e69bfba49785a3d574bc76a433777279</identifier>
     <url>ssh://git@github.com/bwtian/glossaR</url>
     <backend>Git</backend>
