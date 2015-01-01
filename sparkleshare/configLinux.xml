@@ -83,4 +83,10 @@
     <url>ssh://git@bitbucket.org/bwtian/idea</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>p1410iamgcode (2)</name>
+    <identifier>dbf32add7eeb300de3360885badaff49a053ac93</identifier>
+    <url>ssh://git@github.com/bwtian/p1410iamgcode</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
