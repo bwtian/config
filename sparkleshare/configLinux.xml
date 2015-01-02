@@ -54,12 +54,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>zzzz</name>
-    <identifier>baf7e9c539a4cdc1949971d8c204631f75fb724c</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/igarss15</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>phdtex</name>
     <identifier>29b25289c5f162d60a69e42bb09a0a0b70674cb1</identifier>
     <url>ssh://git@bitbucket.org/bwtian/phdtex</url>
@@ -81,12 +75,6 @@
     <name>idea</name>
     <identifier>d9774f6344df1619259eaabc81e14de1c7181e68</identifier>
     <url>ssh://git@bitbucket.org/bwtian/idea</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>p1410iamgcode (2)</name>
-    <identifier>dbf32add7eeb300de3360885badaff49a053ac93</identifier>
-    <url>ssh://git@github.com/bwtian/p1410iamgcode</url>
     <backend>Git</backend>
   </folder>
   <folder>
