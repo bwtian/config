@@ -93,10 +93,10 @@ texcount $1
 function texLink(){
     unalias ln
 linkfrom=${2:-~/SparkleShare/phdtex/thesis/}
-linkto=${1}
+linkto=${1:-./}
 #files=$(ls -lR $linkfrom)
 files=$(find $linkfrom -type f -printf "%T@ %p\n" | sort -nr | cut -d\  -f2-)
-for i in $files; do ln -sfv $i $1; done 
+for i in $files; do ln -sfv $i $linkto; done 
 }
 function htmlWc(){
 echo "World counts by texcount.pl html:" 
