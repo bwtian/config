@@ -4,7 +4,7 @@
     <name>tian</name>
     <email>bwtian@gmail.com</email>
   </user>
-  <notifications>False</notifications>
+  <notifications>True</notifications>
   <folder>
     <name>bib</name>
     <identifier>c50cd55004a08e722f8390e5650f7d86dcc4bec4</identifier>
