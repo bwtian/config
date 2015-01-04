@@ -83,10 +83,4 @@
     <url>ssh://git@bitbucket.org/bwtian/igarss1501</url>
     <backend>Git</backend>
   </folder>
-  <folder>
-    <name>note (2)</name>
-    <identifier>f567661cae25ea258e5e29b0c3c9367e1e34f9a6</identifier>
-    <url>ssh://git@github.com/bwtian/note</url>
-    <backend>Git</backend>
-  </folder>
 </sparkleshare>
