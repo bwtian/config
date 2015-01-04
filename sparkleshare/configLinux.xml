@@ -89,4 +89,10 @@
     <url>ssh://git@github.com/bwtian/inote</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>orgRtex</name>
+    <identifier>e6a27b1d3ce21ee81db5966cec930c36835f14b9</identifier>
+    <url>ssh://git@github.com/bwtian/orgRtex</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
