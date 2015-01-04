@@ -386,7 +386,8 @@ echo $extension
     
 }
 function tsort(){
-    find . -name '*.bmp' | gawk 'BEGIN{ a=1 }{ printf "mv \"%s\" %04d.bmp\n", $0, a++ }' | bash
+    #find . -name '*.$1' | gawk 'BEGIN{ a=1 }{ printf "mv \"%s\" %04d.bmp\n",$0, a++ }' | bash
+    find . -name '*.bmp' | gawk 'BEGIN{ a=1 }{ printf "cp \"%s\" %04d.bmp\n", $0, a++ }' | bash
 }
 function tdupfind(){
 OUTF=rem-duplicates.sh;
