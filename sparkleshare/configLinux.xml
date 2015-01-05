@@ -66,33 +66,9 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>iamg14</name>
-    <identifier>af31e2cb39a905faeda2cc66384689284239dafb</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/iamg14</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>idea</name>
-    <identifier>d9774f6344df1619259eaabc81e14de1c7181e68</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/idea</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>igarss1501</name>
+    <name>igarss15</name>
     <identifier>baf7e9c539a4cdc1949971d8c204631f75fb724c</identifier>
     <url>ssh://git@bitbucket.org/bwtian/igarss1501</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>inote</name>
-    <identifier>f567661cae25ea258e5e29b0c3c9367e1e34f9a6</identifier>
-    <url>ssh://git@github.com/bwtian/inote</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>orgRtex</name>
-    <identifier>e6a27b1d3ce21ee81db5966cec930c36835f14b9</identifier>
-    <url>ssh://git@github.com/bwtian/orgRtex</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
