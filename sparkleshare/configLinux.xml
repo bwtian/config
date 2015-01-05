@@ -71,4 +71,10 @@
     <url>ssh://git@bitbucket.org/bwtian/igarss1501</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdPDF</name>
+    <identifier>7dfbe3d8d81ac317465d0fa292cc43039c7db636</identifier>
+    <url>ssh://git@github.com/bwtian/phdPDF</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
