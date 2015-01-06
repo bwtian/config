@@ -6,12 +6,6 @@
   </user>
   <notifications>True</notifications>
   <folder>
-    <name>bib</name>
-    <identifier>c50cd55004a08e722f8390e5650f7d86dcc4bec4</identifier>
-    <url>ssh://git@github.com/bwtian/bib</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>config</name>
     <identifier>67e5c7485eb6ae0ee251c79a934d1c3282551281</identifier>
     <url>ssh://git@github.com/bwtian/config</url>
