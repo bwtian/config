@@ -25,10 +25,10 @@ function uPPA(){
 sudo add-apt-repository ppa:ubuntugis/ppa
 for i in $ppas; do sudo add-apt-repository $i; done
 }
- function uStart(){
+function uStart(){
     apps="ubuntu-restricted-extras flashplugin-installer  openjdk-7-jre
-          unity-tweak-tool  nautilus-open-terminal  rdesktop okular
-          vlc fping nmap synaptic fdupes catfish samba  abiword chromium-browser
+          unity-tweak-tool  nautilus-open-terminal rdesktop okular
+          vlc fping nmap synaptic fdupes catfish samba abiword chromium-browser
           nautilus-dropbox  sparkleshare  git  Curl  emacs graphviz
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science
