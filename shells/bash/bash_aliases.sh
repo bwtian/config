@@ -33,7 +33,7 @@ function uStart(){
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science
           texlive-fonts-recommended latexmk biblatex biber xindy
-          qgis  gdal-bin libgdal-dev r-base "
+          qgis  gdal-bin libgdal-dev r-base compizconfig-settings-manager"
     for i in $apps; do sudo apt-get build-dep -y $i; done
     for i in $apps; do sudo apt-get install -y $i; done
 #  virtualbox mendeleydesktop chromium-browser rstudio
@@ -84,7 +84,7 @@ function tex2txt(){
 }
 function texWc(){
     #M-x tex-count-words
-echo "World counts by detex and wc:lines, words, characters:" 
+echo "World counts by detex and wc:lines, words, characters:"
 detex -n  $1 | sed '/^\s*$/d' | wc
 echo "World counts by texcout"
 texcount $1
@@ -96,10 +96,10 @@ linkfrom=${2:-~/SparkleShare/phdtex/thesis/}
 linkto=${1:-./}
 #files=$(ls -lR $linkfrom)
 files=$(find $linkfrom -type f -printf "%T@ %p\n" | sort -nr | cut -d\  -f2-)
-for i in $files; do ln -sfv $i $linkto; done 
+for i in $files; do ln -sfv $i $linkto; done
 }
 function htmlWc(){
-echo "World counts by texcount.pl html:" 
+echo "World counts by texcount.pl html:"
 texcount -html -inc -incbib $filename.html
 }
 function pdfWc(){
@@ -111,7 +111,7 @@ pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]*$" > words
 pdftotext $1 - | tr " " "\n" | grep -f words | wc
 echo "convert to ps by pdf2ops and ps2ascill then count"
 pdftops $1
-ps2ascii ${1%\.pdf}.ps | wc 
+ps2ascii ${1%\.pdf}.ps | wc
 }
 
 
@@ -119,12 +119,12 @@ ps2ascii ${1%\.pdf}.ps | wc
 function texClean(){
 dir=build
 dir2=auto
-filename=$1    
+filename=$1
 texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.dvi *.fls
-         *.glo *.glg *.gls *.exgls *.glsdefs *.grsym  *.subsc *.exacr 
-         *.dimnb *.excro *.exsbl *.grsbl  *.subcr *.dimnu  *.exglo  *.exsym	 
+         *.glo *.glg *.gls *.exgls *.glsdefs *.grsym  *.subsc *.exacr
+         *.dimnb *.excro *.exsbl *.grsbl  *.subcr *.dimnu  *.exglo  *.exsym
          *.idx *.ilg *.ind *.ist *.lof *.log *.lot *.out *.equ
-         *.lsg *.sot *.stn *.xdy *.run.xml *.slg *.el 
+         *.lsg *.sot *.stn *.xdy *.run.xml *.slg *.el
          *.nlo *.nls *.synctex.gz *.toc* *.fdb_latexmk, main.pdf test.pdf")
 
 
@@ -142,13 +142,13 @@ dir=build
 filename=${1%\.tex}
 echo "Compiling your Tex to build folder...please wait...!"
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-	bibtex     $dir/$filename.aux 	
-	makeindex  $dir/$filename.aux
-	makeindex  $dir/$filename.idx
+        bibtex     $dir/$filename.aux
+        makeindex  $dir/$filename.aux
+        makeindex  $dir/$filename.idx
         makeglossaries -d $dir $filename
-	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 }
 function texBB(){
@@ -159,13 +159,13 @@ echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 for i in `ls $dir/*.aux`; do bibtex $i; done
-#bibtex     $dir/$filename.aux 	
-	makeindex  $dir/$filename.aux
-	makeindex  $dir/$filename.idx
+#bibtex     $dir/$filename.aux
+        makeindex  $dir/$filename.aux
+        makeindex  $dir/$filename.idx
         makeglossaries -d $dir $filename
-	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 echo "Success!"
 # evince $dir/$filename.pdf
@@ -180,12 +180,12 @@ echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
         biber --quiet --output_directory=$dir $filename
-	makeindex  $dir/$filename.aux
-	makeindex  $dir/$filename.idx
+        makeindex  $dir/$filename.aux
+        makeindex  $dir/$filename.idx
         makeglossaries -d $dir $filename
-	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-	makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 echo "Success!"
 #evince $dir/$filename.pdf
@@ -312,7 +312,7 @@ findcp(){
     dirname=$(pwd | xargs basename)
     mkdir ${2:-$dirname-mp4}
     #find . ! -type d | grep "$1" | xargs cp -t $2
-    # figure out Xargs: Unmatched Single Quote error using -printf 
+    # figure out Xargs: Unmatched Single Quote error using -printf
     find . -type f -name ${1:-*.mp4} -printf '"%p"\n' | xargs cp -v -t  ${2:-$dirname-mp4}
     find . -type f -name ${1:-*.srt} -printf '"%p"\n' | xargs cp -v -t  ${2:-$dirname-mp4}
 }
@@ -326,7 +326,7 @@ mvout(){
 }
 mvoutf(){
     # mv all the file from a subfolder and delete the empty folder
-    for i in $(\ls -fra) ; do mv $i .; done 
+    for i in $(\ls -fra) ; do mv $i .; done
     find -empty -type d -delete
     find -empty -type f -delete
 }
@@ -361,7 +361,7 @@ tClearup(){
     video="*.mp4 *.avi *.srt"
     audio="*.mp3 *.wav "
     code="*.R *.py *.c *.m *.r *.org"
-    for i in $tex; do mv -f $i 01tex; done    
+    for i in $tex; do mv -f $i 01tex; done
     for i in $code; do mv -f $i 02code; done
     for i in $pdf; do mv -f $i 03pdf; done
     for i in $doc; do mv -f $i 04doc; done
@@ -375,15 +375,15 @@ tClearup(){
     for i in $grdData; do mv -f $i 00data; done
     for i in $staData; do mv -f $i 00data; done
     find . -empty -type d -delete
-    # #TODO same name file 
-}    
+    # #TODO same name file
+}
 clearfile(){
 file=$(\ls .)
 filename=${file%.*}
 extension=${file##*.}
 echo $extension
 #for i in $extension; do mkdir $i; done
-    
+
 }
 function tsort(){
     #find . -name '*.$1' | gawk 'BEGIN{ a=1 }{ printf "mv \"%s\" %04d.$1\n",$0, a++ }' | bash
@@ -427,7 +427,7 @@ noblank() {
 delN(){
     echo "!!! remove any N chracters"
     echo "Usage: delN N"
-    rename 's/.{$1}//' * 
+    rename 's/.{$1}//' *
 }
 
 delSpace() {
@@ -440,7 +440,7 @@ delSpace() {
 
 
 # ==============================================================================
-# 
+#
 # ==============================================================================
 
 alias psg="ps -aux ¦ grep bash"
@@ -472,7 +472,7 @@ echo "Usage: cat2org PATTERN(regex) outfile"
 for i in $(\ls | grep $1); do
     echo "* $i"  # Filename.suf as Header, * for org-mode format
     # TODO: Non-suffix Filename as Header
-    echo 
+    echo
     cat "$i"
     echo
     done > $2
@@ -500,7 +500,7 @@ echo "Usage: el2org PATTERN(regex) outfile"
 for i in $(\ls | grep $1); do
     echo "* $i"  # Filename.suf as Header, * for org-mode format
     # TODO: Non-suffix Filename as Header
-    echo "#+BEGIN_SRC emacs-lisp" 
+    echo "#+BEGIN_SRC emacs-lisp"
     cat "$i"
     echo "#+END_SRC"
     done > $2
@@ -585,7 +585,7 @@ grdstack(){
 }
 
 # ==============================================================================
-# Write Papers scripts 
+# Write Papers scripts
 # ==============================================================================
 # ------------------------------------------------------------------------------
 # 0. paperx folder: with subfolders
@@ -606,7 +606,7 @@ paper()
     for i in $folder; do mkdir -p ./$dir/$i; done
     for i in $subref; do mkdir -p ./$dir/0ref/$i; done
     for i in $subdat; do mkdir -p ./$dir/1data/$i; done
-    for i in $subcod; do mkdir -p ./$dir/2code/$i; done    
+    for i in $subcod; do mkdir -p ./$dir/2code/$i; done
     for i in $subres; do mkdir -p ./$dir/3results/$i; done
     for i in $subtex; do mkdir -p ./$dir/4text/$i; done
     for i in $subpub; do mkdir -p ./$dir/5publish/$i; done
@@ -616,7 +616,7 @@ paperName=$1
 mkdir $paperName
 cd $paperName
 figName="fig01 fig02 "
-for i in $figName; do echo $paperNamee$i | mkdir; done  
+for i in $figName; do echo $paperNamee$i | mkdir; done
 }
 symposium() {
     echo "symposium $1 : symposium make a folder project to creat "
@@ -677,7 +677,7 @@ e(){
         \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/elpa/  ~/SparkleShare/emacs.d/e0_builtinEmacs/elpa
         \ln -sfv ~/SparkleShare/emacs.d/00_setEmacs/share/  ~/SparkleShare/emacs.d/e0_builtinEmacs/share
         \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/e0_builtinEmacs.init.el  ~/SparkleShare/emacs.d/e0_builtinEmacs/init.el
-        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/e0_builtinEmacs.org ~/SparkleShare/emacs.d/e0_builtinEmacs/ 
+        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/e0_builtinEmacs.org ~/SparkleShare/emacs.d/e0_builtinEmacs/
         \ln -sfv ~/SparkleShare/emacs.d/e0_builtinEmacs ~/.emacs.d
     elif [ "$1" -eq 1 ]
     then
@@ -695,15 +695,15 @@ e(){
         \ln -sfv  ~/SparkleShare/emacs.d/e1_tianEmacs ~/.emacs.d
     elif [ "$1" -eq 3 ]
     then
-        \ln  -sv  ~/SparkleShare/emacs.d/e3_essEmacs  ~/.emacs.d 
+        \ln  -sv  ~/SparkleShare/emacs.d/e3_essEmacs  ~/.emacs.d
 
     elif [ "$1" -eq 4 ]
     then
-        \ln  -sv  ~/SparkleShare/emacs.d/e4_minEmacs  ~/.emacs.d 
+        \ln  -sv  ~/SparkleShare/emacs.d/e4_minEmacs  ~/.emacs.d
 
     elif [ "$1" -eq 5 ]
     then
-        \ln  -sv ~/SparkleShare/emacs.d/e5_stableEmacs  ~/.emacs.d 
+        \ln  -sv ~/SparkleShare/emacs.d/e5_stableEmacs  ~/.emacs.d
 
     elif [ "$1" -eq 11 ]
     then
@@ -732,8 +732,8 @@ e(){
     elif [ "$1" -eq 17 ]
     then
        \ln  -sv  ~/SparkleShare/emacs.d/gitEmacs/emacs24-starter-kit.git  ~/.emacs.d
-    
-    else 
+
+    else
         'emacs'
     fi
 }
@@ -757,7 +757,7 @@ alias e17='e 17 | emacs'
 alias e18='e 18 | emacs'
 
 #######################################################################
-##  Source other files 
+##  Source other files
 #######################################################################
 sss(){
    source ./paperFun.sh
@@ -768,7 +768,7 @@ sss(){
 #######################################################################
 
 upR(){
-    ./configure --enable-R-shlib --prefix=/usr/local 
+    ./configure --enable-R-shlib --prefix=/usr/local
     make
     sudo make install
 }
