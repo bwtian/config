@@ -71,10 +71,4 @@
     <url>ssh://git@github.com/bwtian/bib</url>
     <backend>Git</backend>
   </folder>
-  <folder>
-    <name>modis</name>
-    <identifier>ce184ab2735dcbd15c4f8b09dd9e40215add7595</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/modis</url>
-    <backend>Git</backend>
-  </folder>
 </sparkleshare>
