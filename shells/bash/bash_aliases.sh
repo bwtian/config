@@ -7,6 +7,15 @@
 #+LINK_HOME:
 #+KEYWORDS: alaias, \,unalias,
 
+# #####################################################################
+# # Path
+# #####################################################################
+
+# Wed May  7 23:32:09 JST 2014 - MODIS Reprojection Tool modifications
+MRT_HOME="~/Dropbox/soft/linux/MRT/MRT"
+PATH="$PATH:~/Dropbox/soft/linux/MRT/MRT/bin"
+MRT_DATA_DIR="~/Dropbox/soft/linux/MRT/MRT/data"
+export MRT_HOME PATH MRT_DATA_DIR
 
 # #####################################################################
 # # Global Variables
