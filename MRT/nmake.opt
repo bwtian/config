@@ -1,0 +1,20 @@
+
+OPTFLAGS =	-O2 -MT -EHsc -W3 -D "NDEBUG" -D "WIN32" -D "_WINDOWS" -D "_MFHDFLIB_" -D "_HDFLIB_" -D "_CRT_SECURE_NO_WARNINGS"
+
+# Compiler specific options. You may probably want to adjust compilation
+# parameters in CFLAGS variable. Refer to your compiler documentation
+# for the option reference.
+#
+MAKE	=	nmake /nologo
+CC	=	cl /nologo
+CXX	=	cl /nologo
+AR	=	lib /nologo
+LD	=	link /nologo
+
+CFLAGS  =	$(OPTFLAGS) $(INCS) $(EXTRAFLAGS)
+CXXFLAGS =	$(OPTFLAGS) $(INCS) $(EXTRAFLAGS)
+EXTRAFLAGS =
+INCS    =	-I../include
+LIBDIR  = 	../lib
+LIBS    =
+
