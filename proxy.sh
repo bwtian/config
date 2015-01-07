@@ -1,5 +1,5 @@
 #!/bin/bash
-# Worked well
+# Worked well for R and Modis download
 # sudo echo "export http_proxy=http://proxy.kuins.net:8080"  >> /etc/profile
 # Then setup Network/Network Proxy/Manual/Http,Httpps, Ftp
 ## Others
