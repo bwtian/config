@@ -26,7 +26,7 @@ alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
 # # Functions
 # #####################################################################
 alias uu='source ~/SparkleShare/config/deb/update.deb.sh'
-alias xmod='xmodmap ~/SparkleShare/config/xmodmap/Xmodmap'
+alias mykey='xmodmap ~/SparkleShare/config/xmodmap/Xmodmap'
 #xmodmap ~/SparkleShare/config/xmodmap/Xmodmap
 
 function uPPA(){
