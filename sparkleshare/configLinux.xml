@@ -95,4 +95,10 @@
     <url>ssh://git@bitbucket.org/bwtian/phdpdf</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdPDF</name>
+    <identifier>543090dfd7e9f23bcf27a63a687373a707611bb1</identifier>
+    <url>ssh://git@github.com/bwtian/phdPDF</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
