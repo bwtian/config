@@ -352,6 +352,10 @@ alias findmd5='find . -type f -print0 | xargs -0 md5sum | sort | uniq -w32 --all
 # ##############################################################################
 # tClearup cleanup files not in a folder folders
 # ##############################################################################
+function p2pdf(){
+    pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
+    for i in $pic; do convert $i $(basename -s $i).pdf; done
+}
 tClearup(){
     find . -empty -type d -delete #delete empty folder
     find . -empty -type f -delete #delete empty folder
