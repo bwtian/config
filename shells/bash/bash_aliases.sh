@@ -187,16 +187,16 @@ dir=build
 filename=${1:-main}
 echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+xelatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 for i in `ls $dir/*.aux`; do bibtex $i; done
 #bibtex     $dir/$filename.aux
         makeindex  $dir/$filename.aux
         makeindex  $dir/$filename.idx
         makeglossaries -d $dir $filename
         makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+xeflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
         makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+xeflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 echo "Success!"
 # evince $dir/$filename.pdf
 cp  $dir/$filename.pdf .
