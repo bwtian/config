@@ -101,4 +101,10 @@
     <url>ssh://git@github.com/bwtian/phdPDF</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdslide</name>
+    <identifier>2b2c81f9a8ddf3773e0b84c8ccbde6dfd2b4dc5c</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phdslide</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
