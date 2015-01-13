@@ -90,18 +90,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>phdpdf (2)</name>
-    <identifier>f3cd59dce75735463923ffaf2f02e93843128e3b</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/phdpdf</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>phdPDF</name>
-    <identifier>543090dfd7e9f23bcf27a63a687373a707611bb1</identifier>
-    <url>ssh://git@github.com/bwtian/phdPDF</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>phdslide</name>
     <identifier>2b2c81f9a8ddf3773e0b84c8ccbde6dfd2b4dc5c</identifier>
     <url>ssh://git@bitbucket.org/bwtian/phdslide</url>
