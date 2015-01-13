@@ -48,7 +48,8 @@ function uStart(){
 #  virtualbox mendeleydesktop chromium-browser rstudio
 }
 function delSymbol(){
-
+DIR=${1:-./}
+find -L $DIR -maxdepth 1 -type l -delete
 
     }
 function geInstall(){
