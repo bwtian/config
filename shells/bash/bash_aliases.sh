@@ -48,7 +48,9 @@ function uStart(){
 #  virtualbox mendeleydesktop chromium-browser rstudio
 }
 function delSymbol(){
-    }}
+
+
+    }
 function geInstall(){
 sudo apt-get install -y lsb-core  libfontconfig.so.1
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_i386.deb
