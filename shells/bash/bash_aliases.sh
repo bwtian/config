@@ -40,7 +40,7 @@ function uStart(){
           vlc fping nmap synaptic fdupes catfish samba abiword chromium-browser
           nautilus-dropbox  sparkleshare   git Curl emacs graphviz
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
-          texlive-latex-extra texlive-bibtex-extra texlive-science
+          texlive-latex-extra texlive-bibtex-extra texlive-science testdisk
           texlive-fonts-recommended latexmk biblatex biber xindy python-pip
           qgis  gdal-bin libgdal-dev r-base compizconfig-settings-manager"
     for i in $apps; do sudo apt-get build-dep -y $i; done
