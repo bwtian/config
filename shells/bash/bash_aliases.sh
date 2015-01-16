@@ -22,6 +22,7 @@ export MRT_HOME PATH MRT_DATA_DIR
 # #####################################################################
 codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
 alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
+source ~/D
 # #####################################################################
 # # Functions
 # #####################################################################
