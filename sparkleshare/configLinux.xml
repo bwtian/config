@@ -95,4 +95,10 @@
     <url>ssh://git@github.com/moocc/coursera</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdcode</name>
+    <identifier>06369847692fd221b0c906f4f4e930674ad2a4e3</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phdcode</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
