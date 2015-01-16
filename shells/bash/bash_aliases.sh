@@ -310,8 +310,6 @@ alias cls='clear;ls'
 alias ..='cd ..'
 alias ...='cd ../..'
 #alias --='cd --'
-alias md=’mkdir’
-alias rd=’rmdir’
 # Make Dir form a filelist # cat dirlist | xargs -L 1 mkdir
 mdlist()
 {
