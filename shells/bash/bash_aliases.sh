@@ -10,7 +10,7 @@
 # #####################################################################
 # # Path
 # #####################################################################
-
+gmail="bwtian@gmail.com"
 # Wed May  7 23:32:09 JST 2014 - MODIS Reprojection Tool modifications
 MRT_HOME="~/SparkleShare/config/MRT"
 PATH="$PATH:~/SparkleShare/config/MRT/bin"
