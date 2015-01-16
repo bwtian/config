@@ -828,3 +828,20 @@ sudo cmake..
 sudo make
 sudo make install
 }
+# ##############################################################################
+# Course Download from Coursera and Youtube
+# $1: Course Name, $2: Download Path, Default is ~/Download/Coursera/Course name
+# ##############################################################################
+# coursera-dl="~/SparkleShare/coursera/coursera-dl"
+DOWNLOAD_PATH="~/MOOC/Coursera"
+mkdir -p $DOWNLOAD_PATH
+cou() {
+    python ~/SparkleShare/coursera/coursera-dl -u $gmail -p $cpass $1 --path=${2:-$DOWNLOAD_PATH}
+}
+couhere() {
+    echo "update Coursera course in current folder"
+    for i in $(\ls)
+    do
+      python ~/SparkleShare/coursera/coursera-dl -u $gmail -p $cpass $i
+    done
+}
