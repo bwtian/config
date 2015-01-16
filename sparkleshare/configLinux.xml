@@ -95,4 +95,10 @@
     <url>ssh://git@bitbucket.org/bwtian/phdslide</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>coursera</name>
+    <identifier>1aed6fdf78b75fa5e7b692a2b3ab2d20fb11da05</identifier>
+    <url>ssh://git@github.com/moocc/coursera</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
