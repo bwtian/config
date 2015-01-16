@@ -16,13 +16,13 @@ MRT_HOME="~/SparkleShare/config/MRT"
 PATH="$PATH:~/SparkleShare/config/MRT/bin"
 MRT_DATA_DIR="~/SparkleShare/config/MRT/data"
 export MRT_HOME PATH MRT_DATA_DIR
-
+alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
+source ~/Dropbox/config/shells/bash/tian.sh
 # #####################################################################
 # # Global Variables
 # #####################################################################
 codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
-alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
-source ~/D
+
 # #####################################################################
 # # Functions
 # #####################################################################
