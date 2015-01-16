@@ -832,7 +832,7 @@ sudo make install
 # $1: Course Name, $2: Download Path, Default is ~/Download/Coursera/Course name
 # ##############################################################################
 # coursera-dl="~/SparkleShare/coursera/coursera-dl"
-DOWNLOAD_PATH="~/MOOC/Coursera"
+DOWNLOAD_PATH=~/MOOC/Coursera
 mkdir -p $DOWNLOAD_PATH
 cou() {
     python ~/SparkleShare/coursera/coursera-dl -u $gmail -p $cpass $1 --path=${2:-$DOWNLOAD_PATH}
