@@ -101,4 +101,10 @@
     <url>ssh://git@bitbucket.org/bwtian/phdcode</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>prs</name>
+    <identifier>ccbc6d136eec0f744ea5bdbb5fe8702332a650fd</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/prs</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
