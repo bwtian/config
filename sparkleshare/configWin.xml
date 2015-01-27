@@ -5,4 +5,10 @@
     <email>bwtian@gmail.com</email>
   </user>
   <notifications>True</notifications>
+  <folder>
+    <name>rs1501</name>
+    <identifier>c2efac6d6d1271b3dfa2d3862f7ab1c827d2ad99</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/rs1501</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
