@@ -165,6 +165,25 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
         makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 }
+function texB(){
+mkdir -p build
+dir=build
+filename=${1:-main}
+echo "Compiling your Tex to build folder...please wait...!"
+texClean $filename
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+        biber --quiet --output_directory=$dir $filename
+        makeindex  $dir/$filename.aux
+        makeindex  $dir/$filename.idx
+        makeglossaries -d $dir $filename
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
+echo "Success!"
+#evince $dir/$filename.pdf
+okular $dir/$filename.pdf
+}
 function texBB(){
 mkdir -p build
 dir=build
@@ -207,25 +226,7 @@ echo "Success!"
 cp  $dir/$filename.pdf .
 okular $filename.pdf
 }
-function texB(){
-mkdir -p build
-dir=build
-filename=${1:-main}
-echo "Compiling your Tex to build folder...please wait...!"
-texClean $filename
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-        biber --quiet --output_directory=$dir $filename
-        makeindex  $dir/$filename.aux
-        makeindex  $dir/$filename.idx
-        makeglossaries -d $dir $filename
-        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-        makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
-pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
-echo "Success!"
-#evince $dir/$filename.pdf
-okular $dir/$filename.pdf
-}
+
 
 
 
