@@ -113,4 +113,10 @@
     <url>ssh://git@bitbucket.org/bwtian/rs1501</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>drr</name>
+    <identifier>28f18df65d435bbeb702fc01d324e7d482a94f95</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/drr</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
