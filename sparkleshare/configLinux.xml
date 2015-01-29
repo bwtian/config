@@ -90,12 +90,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>coursera</name>
-    <identifier>1aed6fdf78b75fa5e7b692a2b3ab2d20fb11da05</identifier>
-    <url>ssh://git@github.com/moocc/coursera</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>phdcode</name>
     <identifier>06369847692fd221b0c906f4f4e930674ad2a4e3</identifier>
     <url>ssh://git@bitbucket.org/bwtian/phdcode</url>
@@ -111,12 +105,6 @@
     <name>rs1501</name>
     <identifier>c2efac6d6d1271b3dfa2d3862f7ab1c827d2ad99</identifier>
     <url>ssh://git@bitbucket.org/bwtian/rs1501</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>drr</name>
-    <identifier>28f18df65d435bbeb702fc01d324e7d482a94f95</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/drr</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
