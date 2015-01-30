@@ -91,7 +91,7 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dCol
 }
 function texDiff(){
 echo "latexdiff old new > diff"
-latexdiff $1 $2 > ${2%\.tex}-diff.tex
+latexdiff --flatten $1 $2 > ${2%\.tex}-diff.tex
 }
 function tex2txt(){
  detex -n  $1 |
