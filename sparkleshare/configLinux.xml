@@ -119,4 +119,10 @@
     <url>ssh://git@bitbucket.org/bwtian/phdpdf</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>iamg14</name>
+    <identifier>af31e2cb39a905faeda2cc66384689284239dafb</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/iamg14</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
