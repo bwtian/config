@@ -107,4 +107,10 @@
     <url>ssh://git@bitbucket.org/bwtian/rs1501</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>rcode</name>
+    <identifier>bf08befa9d121cce34c98eefab5b94ed24fb30ad</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/rcode</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
