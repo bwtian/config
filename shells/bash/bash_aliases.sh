@@ -91,7 +91,7 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dCol
 }
 function texDiff(){
 echo "latexdiff old new > diff"
-latexdiff --flatten  --append-safecmd=="abstract"  $1 $2 > ${2%\.tex}-diff.tex
+latexdiff --flatten  --append-safecmd="abstract"  $1 $2 > ${2%\.tex}-diff.tex
 #--math-markup=1 --driver=pdftex --type=CFONT -t UNDERLINE --append-textcmd="abstract"
 #--enable-citation-markup --showall --append-safecmd= –exclude-textcmd=section
 }
