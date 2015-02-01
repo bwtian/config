@@ -91,7 +91,7 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dCol
 }
 function texDiff(){
 echo "latexdiff old new > diff"
-latexdiff --flatten --showall -t UNDERLINE $1 $2 > ${2%\.tex}-diff.tex
+latexdiff --flatten --showall --enable-citation-markup -t UNDERLINE $1 $2 > ${2%\.tex}-diff.tex
 #--math-markup=1 --driver=pdftex --type=CFONT
 }
 function tex2txt(){
