@@ -93,7 +93,7 @@ function texDiff(){
 echo "latexdiff old new > diff"
 latexdiff --flatten --append-textcmd="\abstract" $1 $2 > ${2%\.tex}-diff.tex
 #--math-markup=1 --driver=pdftex --type=CFONT -t UNDERLINE
-#--enable-citation-markup --showall --append-safecmd=
+#--enable-citation-markup --showall --append-safecmd= –exclude-textcmd=section
 }
 function tex2txt(){
  detex -n  $1 |
