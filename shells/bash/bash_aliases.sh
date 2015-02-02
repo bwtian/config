@@ -387,7 +387,7 @@ function p2pdf(){
 }
 function pdf2png(){
     pdf="*.pdf"
-    for i in $pdf; do convert $i $(basename -s $i).png; done
+    for i in $pdf; do convert $i $(basename $i pdf).png; done
 }
 tClearup(){
     find . -empty -type d -delete #delete empty folder
