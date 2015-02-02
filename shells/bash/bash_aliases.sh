@@ -385,6 +385,10 @@ function p2pdf(){
     pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
     for i in $pic; do convert $i $(basename -s $i).pdf; done
 }
+function pdf2png(){
+    pic="*.pdf"
+    for i in $pic; do convert $i $(basename -s $i).pdf; done
+}
 tClearup(){
     find . -empty -type d -delete #delete empty folder
     find . -empty -type f -delete #delete empty folder
