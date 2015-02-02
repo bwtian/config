@@ -91,7 +91,8 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dCol
 }
 function texDiff(){
 echo "latexdiff old new > diff"
-latexdiff --flatten -t  --append-textcmd="abstract" $1 $2 > ${2%\.tex}-diff.tex
+latexdiff --flatten -t INVISIBLE --append-textcmd="abstract" $1 $2 > ${2%\.tex}-diff.tex
+# -t TRADITIONAL CFONT FONTSTRIKE INVISIBLE
 # --showall --math-markup=1 --driver=pdftex --type=CFONT -t UNDERLINE
 #--enable-citation-markup  --append-safecmd= –exclude-textcmd=section
 }
