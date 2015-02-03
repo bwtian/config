@@ -96,12 +96,6 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>rs1501</name>
-    <identifier>c2efac6d6d1271b3dfa2d3862f7ab1c827d2ad99</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/rs1501</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>rcode</name>
     <identifier>bf08befa9d121cce34c98eefab5b94ed24fb30ad</identifier>
     <url>ssh://git@bitbucket.org/bwtian/rcode</url>
