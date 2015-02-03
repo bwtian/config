@@ -113,4 +113,10 @@
     <url>ssh://git@bitbucket.org/bwtian/iamg14</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>rstex</name>
+    <identifier>a6105092f5476956272e0a1f5658c8b0e0a2b5f6</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/rstex</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
