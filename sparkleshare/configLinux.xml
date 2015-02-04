@@ -125,4 +125,10 @@
     <url>ssh://git@bitbucket.org/bwtian/rsreply</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>kulab</name>
+    <identifier>207fa13854732dc6fed1b80e14c4513f62544dcb</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/kulab</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
