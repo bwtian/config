@@ -131,4 +131,10 @@
     <url>ssh://git@bitbucket.org/bwtian/kulab</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>bw</name>
+    <identifier>c0eb1b79bb5e53c2af1220afc00c68945b6bdfd5</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/bw</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
