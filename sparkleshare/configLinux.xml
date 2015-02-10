@@ -137,4 +137,10 @@
     <url>ssh://git@bitbucket.org/bwtian/bw</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>gand</name>
+    <identifier>6d2a878fbca785ad9e5bdf117bef36c5e4926839</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/gand</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
