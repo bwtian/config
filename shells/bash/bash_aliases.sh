@@ -11,6 +11,7 @@
 # # Path
 # #####################################################################
 gmail="bwtian@gmail.com"
+
 # Wed May  7 23:32:09 JST 2014 - MODIS Reprojection Tool modifications
 MRT_HOME="~/SparkleShare/config/MRT"
 PATH="$PATH:~/SparkleShare/config/MRT/bin"
@@ -841,12 +842,16 @@ sudo make install
 # $1: Course Name, $2: Download Path, Default is ~/Download/Coursera/Course name
 # ##############################################################################
 # coursera-dl="~/SparkleShare/coursera/coursera-dl"
-DOWNLOAD_PATH=~/MOOC/Coursera
-mkdir -p $DOWNLOAD_PATH
-cou() {
+# DOWNLOAD_PATH=~/MOOC/Coursera
+# mkdir -p $DOWNLOAD_PATH
+function C() {
     python ~/SparkleShare/coursera/coursera-dl -u $gmail -p $cpass $1 --path=${2:-$DOWNLOAD_PATH}
 }
-couhere() {
+
+function cou() {
+    python ~/SparkleShare/coursera/coursera-dl -u $gmail -p $cpass $1 --path=${2:-$DOWNLOAD_PATH}
+}
+function couhere() {
     echo "update Coursera course in current folder"
     for i in $(\ls)
     do
