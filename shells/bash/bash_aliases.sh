@@ -845,7 +845,9 @@ sudo make install
 # DOWNLOAD_PATH=~/MOOC/Coursera
 # mkdir -p $DOWNLOAD_PATH
 function C() {
-    cdownloader.py -n $1 -u $gmail -p $pCou
+    mkdir -p $1
+    cd
+    cdownloader.py -n $1 -u $gmail -p $pCoursera
 }
 
 function cou() {
