@@ -851,6 +851,7 @@ function C() {
 }
 function C1() {
     for i in $(\ls)
+    cd $i
     cdownloader.py -n $i -u $gmail -p $pCoursera
 }
 
