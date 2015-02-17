@@ -850,8 +850,8 @@ function C() {
     cdownloader.py -n $1 -u $gmail -p $pCoursera
 }
 function C1() {
-
-    cdownloader.py -n $1 -u $gmail -p $pCoursera
+    for i in $(\ls)
+    cdownloader.py -n $i -u $gmail -p $pCoursera
 }
 
 
