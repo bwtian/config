@@ -173,7 +173,7 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
 function texB(){
 mkdir -p build
 dir=build
-filename=${1%\.tex:-main}
+filename=${1:-main}
 echo "Compiling your Tex to build folder...please wait...!"
 texClean $filename
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
