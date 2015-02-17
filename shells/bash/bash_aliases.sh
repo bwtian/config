@@ -18,7 +18,7 @@ PATH="$PATH:~/SparkleShare/config/MRT/bin"
 MRT_DATA_DIR="~/SparkleShare/config/MRT/data"
 export MRT_HOME PATH MRT_DATA_DIR
 alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
-source ~/Dropbox/config/shells/tian.sh
+source ~/SparkleShare/tian/shells/tian.sh
 # #####################################################################
 # # Global Variables
 # #####################################################################
