@@ -845,7 +845,7 @@ sudo make install
 # DOWNLOAD_PATH=~/MOOC/Coursera
 # mkdir -p $DOWNLOAD_PATH
 function C() {
-    ### first insatll coursera-asyncio-downloadre
+    ### first insatll "coursera-asyncio-downloader"
     mkdir -p $1
     cd $1
     cdownloader.py -n $1 -u $gmail -p $pCoursera
