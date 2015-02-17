@@ -845,7 +845,7 @@ sudo make install
 # DOWNLOAD_PATH=~/MOOC/Coursera
 # mkdir -p $DOWNLOAD_PATH
 function C() {
-    python ~/SparkleShare/coursera/coursera-dl -u $gmail -p $cpass $1 --path=${2:-$DOWNLOAD_PATH}
+    cdownloader.py -n $1 -u $gmail -p tianlab0@cou
 }
 
 function cou() {
