@@ -143,4 +143,10 @@
     <url>ssh://git@bitbucket.org/bwtian/gand</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>tian</name>
+    <identifier>c20aff91a39392a6cd1e41752fb0de5d4ba8b332</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/tian</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
