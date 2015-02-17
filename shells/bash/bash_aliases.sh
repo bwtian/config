@@ -855,6 +855,7 @@ function C1() {
     do
     cd $i
     cdownloader.py -n $i -u $gmail -p $pCoursera
+    cd ..
     done
 }
 
