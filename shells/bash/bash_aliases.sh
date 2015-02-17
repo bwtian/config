@@ -846,7 +846,7 @@ sudo make install
 # mkdir -p $DOWNLOAD_PATH
 function C() {
     mkdir -p $1
-    cd
+    cd $1
     cdownloader.py -n $1 -u $gmail -p $pCoursera
 }
 
