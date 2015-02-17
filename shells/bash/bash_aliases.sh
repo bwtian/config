@@ -849,6 +849,11 @@ function C() {
     cd $1
     cdownloader.py -n $1 -u $gmail -p $pCoursera
 }
+function C1() {
+
+    cdownloader.py -n $1 -u $gmail -p $pCoursera
+}
+
 
 function cou() {
     python ~/SparkleShare/coursera/coursera-dl -u $gmail -p $cpass $1 --path=${2:-$DOWNLOAD_PATH}
