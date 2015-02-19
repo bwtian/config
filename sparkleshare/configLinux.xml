@@ -161,4 +161,10 @@
     <url>ssh://git@github.com/bwtian/TIR</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>jp3d</name>
+    <identifier>810ad97efb4f5d884ab1474d0a7a299c10444dc6</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/jp3d</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
