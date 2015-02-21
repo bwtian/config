@@ -179,4 +179,10 @@
     <url>ssh://git@github.com/bwtian/learnRviaCode</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>myr</name>
+    <identifier>82379bf9a69a11eed2c687a9ec6bad35de4c599c</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/myr</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
