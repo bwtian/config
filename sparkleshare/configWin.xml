@@ -6,9 +6,21 @@
   </user>
   <notifications>True</notifications>
   <folder>
-    <name>rs1501</name>
-    <identifier>c2efac6d6d1271b3dfa2d3862f7ab1c827d2ad99</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/rs1501</url>
+    <name>bw (2)</name>
+    <identifier>c0eb1b79bb5e53c2af1220afc00c68945b6bdfd5</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/bw</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>projects</name>
+    <identifier>bf074a6973edcb6ae57a5f86a1070fa4f77f3d25</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/projects</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>phdsubmit</name>
+    <identifier>042a04366fdbb21f8ef1f8515564d9af78dc6e14</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phdsubmit</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
