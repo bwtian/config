@@ -197,4 +197,10 @@
     <url>ssh://git@bitbucket.org/bwtian/idmr</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>rssubmit</name>
+    <identifier>000b4e8103284de57cf1f7d281aa6bb8721b0290</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/rssubmit</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
