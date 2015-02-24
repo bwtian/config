@@ -185,4 +185,10 @@
     <url>ssh://git@bitbucket.org/bwtian/myr</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdsubmit</name>
+    <identifier>042a04366fdbb21f8ef1f8515564d9af78dc6e14</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phdsubmit</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
