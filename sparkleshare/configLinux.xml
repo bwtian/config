@@ -197,4 +197,10 @@
     <url>ssh://git@bitbucket.org/bwtian/satreps</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>idmr</name>
+    <identifier>cb4854323a9f98a961804efdbaf3ca0a1e75d881</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/idmr</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
