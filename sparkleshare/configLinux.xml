@@ -191,4 +191,10 @@
     <url>ssh://git@bitbucket.org/bwtian/phdsubmit</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>satreps</name>
+    <identifier>eb297ecb6347fdc103bee88da033139c8ec7d6da</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/satreps</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
