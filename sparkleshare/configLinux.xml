@@ -203,4 +203,10 @@
     <url>ssh://git@bitbucket.org/bwtian/rssubmit</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>gelk</name>
+    <identifier>125f4cd3979d94afd4183073ed92e60f27e76c0c</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/gelk</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
