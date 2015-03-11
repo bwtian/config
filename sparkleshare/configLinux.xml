@@ -209,4 +209,10 @@
     <url>ssh://git@bitbucket.org/bwtian/gelk</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>wcdrr</name>
+    <identifier>dfeaf7fc5a31dbe447eeeca306391ff36afa5c44</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/wcdrr</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
