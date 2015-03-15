@@ -170,7 +170,7 @@ pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.te
         makeindex  $dir/$filename.nlo -s  $dir/nomencl.ist -o  $dir/$filename.nls
 pdflatex -synctex=1 -interaction=nonstopmode -output-directory=$dir $filename.tex
 }
-function tex(){
+function texBB(){
 mkdir -p build
 dir=build
 filename=${1:-main}
