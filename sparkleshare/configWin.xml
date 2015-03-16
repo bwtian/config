@@ -6,21 +6,21 @@
   </user>
   <notifications>True</notifications>
   <folder>
-    <name>bw (2)</name>
-    <identifier>c0eb1b79bb5e53c2af1220afc00c68945b6bdfd5</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/bw</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>projects</name>
-    <identifier>bf074a6973edcb6ae57a5f86a1070fa4f77f3d25</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/projects</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
     <name>phdsubmit</name>
     <identifier>042a04366fdbb21f8ef1f8515564d9af78dc6e14</identifier>
     <url>ssh://git@bitbucket.org/bwtian/phdsubmit</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>gelk (2)</name>
+    <identifier>125f4cd3979d94afd4183073ed92e60f27e76c0c</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/gelk</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>scu</name>
+    <identifier>47c08775af5a263e81a1943ddd9e5574c90c22c4</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/scu</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
