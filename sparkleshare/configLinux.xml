@@ -221,4 +221,10 @@
     <url>ssh://git@bitbucket.org/bwtian/rsertex</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>rsertex (2)</name>
+    <identifier>3486a2260c1fc765b1f020c8103923fabe67f050</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/rsertex</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
