@@ -18,9 +18,15 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>scu</name>
+    <name>scu (2)</name>
     <identifier>47c08775af5a263e81a1943ddd9e5574c90c22c4</identifier>
     <url>ssh://git@bitbucket.org/bwtian/scu</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>phdsubmit (2)</name>
+    <identifier>042a04366fdbb21f8ef1f8515564d9af78dc6e14</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phdsubmit</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
