@@ -227,4 +227,10 @@
     <url>ssh://git@github.com/bwtian/texTemplate</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>150325geothermaljapan</name>
+    <identifier>f2d106009d19a5b86853c06108028cbcefa2a9b4</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/150325geothermaljapan</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
