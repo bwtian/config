@@ -29,4 +29,16 @@
     <url>ssh://git@bitbucket.org/bwtian/phdsubmit</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>rLibWin</name>
+    <identifier>339165efedb89c00ee16edf7534a5526e569e16e</identifier>
+    <url>ssh://git@github.com/bwtian/rLibWin</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>150325geothermaljapan</name>
+    <identifier>f2d106009d19a5b86853c06108028cbcefa2a9b4</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/150325geothermaljapan</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
