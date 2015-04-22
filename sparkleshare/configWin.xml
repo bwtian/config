@@ -12,21 +12,9 @@
     <backend>Git</backend>
   </folder>
   <folder>
-    <name>gelk (2)</name>
+    <name>gelk</name>
     <identifier>125f4cd3979d94afd4183073ed92e60f27e76c0c</identifier>
     <url>ssh://git@bitbucket.org/bwtian/gelk</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>scu (2)</name>
-    <identifier>47c08775af5a263e81a1943ddd9e5574c90c22c4</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/scu</url>
-    <backend>Git</backend>
-  </folder>
-  <folder>
-    <name>phdsubmit (2)</name>
-    <identifier>042a04366fdbb21f8ef1f8515564d9af78dc6e14</identifier>
-    <url>ssh://git@bitbucket.org/bwtian/phdsubmit</url>
     <backend>Git</backend>
   </folder>
   <folder>
@@ -39,6 +27,42 @@
     <name>150325geothermaljapan</name>
     <identifier>f2d106009d19a5b86853c06108028cbcefa2a9b4</identifier>
     <url>ssh://git@bitbucket.org/bwtian/150325geothermaljapan</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>150403fagaiwei</name>
+    <identifier>a68c254de8b869cbbd24baf163e752a9ece14112</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/150403fagaiwei</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>gand</name>
+    <identifier>6d2a878fbca785ad9e5bdf117bef36c5e4926839</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/gand</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>shortcut</name>
+    <identifier>c1cf6a1a7ad704350ea3e3b76ff4c03526dc40b7</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/shortcut</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>emacs.win</name>
+    <identifier>dbf79da39c2bffa4b10706c835ff8b4960cae8f6</identifier>
+    <url>ssh://git@github.com/bwtian/emacs.win</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>150326variogramtex</name>
+    <identifier>dbb5ab8c02ff28e7f2860ea5bd1005b87677aa94</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/150326variogramtex</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>bib (2)</name>
+    <identifier>c50cd55004a08e722f8390e5650f7d86dcc4bec4</identifier>
+    <url>ssh://git@github.com/bwtian/bib</url>
     <backend>Git</backend>
   </folder>
 </sparkleshare>
