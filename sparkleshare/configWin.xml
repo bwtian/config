@@ -65,4 +65,22 @@
     <url>ssh://git@github.com/bwtian/bib</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>phdcode</name>
+    <identifier>06369847692fd221b0c906f4f4e930674ad2a4e3</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/phdcode</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>TIR</name>
+    <identifier>00360d1e524df9879e7cddafd133eaadc3366ebb</identifier>
+    <url>ssh://git@github.com/bwtian/TIR</url>
+    <backend>Git</backend>
+  </folder>
+  <folder>
+    <name>geothermaR</name>
+    <identifier>5b4b794e5a5a91cc7ca14c68b72b4bef4fbcb077</identifier>
+    <url>ssh://git@github.com/bwtian/geothermaR</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
