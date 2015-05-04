@@ -36,7 +36,7 @@ function uPPA(){
 sudo add-apt-repository ppa:ubuntugis/ppa
 for i in $ppas; do sudo add-apt-repository $i; done
 }
-function uStart(){
+function uIn(){
     apps="ubuntu-restricted-extras flashplugin-installer  openjdk-7-jre
           unity-tweak-tool  nautilus-open-terminal rdesktop okular pdftk
           vlc fping nmap synaptic fdupes catfish samba abiword chromium-browser
