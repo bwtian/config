@@ -83,4 +83,10 @@
     <url>ssh://git@github.com/bwtian/geothermaR</url>
     <backend>Git</backend>
   </folder>
+  <folder>
+    <name>150508s1tbx</name>
+    <identifier>0e903aad79962a717ca49c0adc3610f72cf44199</identifier>
+    <url>ssh://git@bitbucket.org/bwtian/150508s1tbx</url>
+    <backend>Git</backend>
+  </folder>
 </sparkleshare>
