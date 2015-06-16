@@ -37,18 +37,23 @@ sudo add-apt-repository ppa:ubuntugis/ppa
 for i in $ppas; do sudo add-apt-repository $i; done
 }
 function uIn(){
-    apps="ubuntu-restricted-extras flashplugin-installer  openjdk-7-jre
-          unity-tweak-tool  nautilus-open-terminal rdesktop okular pdftk
-          vlc fping nmap synaptic fdupes catfish samba abiword chromium-browser
-          nautilus-dropbox  sparkleshare git Curl emacs graphviz p7zip-full
+    apps="ubuntu-restricted-extras flashplugin-installer openjdk-8-jre
+          unity-tweak-tool nautilus-open-terminal rdesktop 
+          aptitude gedbi synaptic sparkleshare
+          emacs graphviz inkscape gimp gimp-plugin-registry gimp-data-extras
+          okular pdftk darktable rawthera pee pinta shotwell
+          vlc fping nmap synaptic fdupes catfish samba 
+          abiword chromium-browser
+          git Curl  p7zip-full  
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
-          texlive-latex-extra texlive-bibtex-extra texlive-science testdisk
-          texlive-fonts-recommended latexmk biblatex biber xindy python-pip
+          texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
+          texlive-fonts-recommended  biblatex biber xindy python-pip
           qgis gdal-bin libgdal-dev r-base compizconfig-settings-manager
-          aptitude ibus-mozc"
+          testdisk ibus-mozc "
     for i in $apps; do sudo apt-get build-dep -y $i; done
     for i in $apps; do sudo apt-get install -y $i; done
-#  virtualbox mendeleydesktop chromium-browser rstudio
+#  virtualbox mendeleydesktop chromium-browser rstudio nautilus-dropbox
+#  viber skype
 }
 function delSymbol(){
 DIR=${1:-./}
