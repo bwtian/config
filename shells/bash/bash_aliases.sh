@@ -37,7 +37,7 @@ sudo add-apt-repository ppa:ubuntugis/ppa
 for i in $ppas; do sudo add-apt-repository $i; done
 }
 function uIn(){
-    apps="ubuntu-restricted-extras flashplugin-installer openjdk-8-jre
+    apps="ubuntu-restricted-extras flashplugin-installer
           unity-tweak-tool nautilus-open-terminal rdesktop 
           aptitude gedbi synaptic sparkleshare
           emacs graphviz inkscape gimp gimp-plugin-registry gimp-data-extras
