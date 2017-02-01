@@ -44,7 +44,7 @@ function uIn(){
           okular pdftk darktable rawthera pee pinta shotwell
           vlc fping nmap synaptic fdupes catfish samba
           abiword chromium-browser
-          git Curl  p7zip-full
+          git Curl  p7zip-full python-notify
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
           texlive-fonts-recommended  biblatex biber xindy python-pip
