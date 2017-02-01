@@ -38,13 +38,13 @@ for i in $ppas; do sudo add-apt-repository $i; done
 }
 function uIn(){
     apps="ubuntu-restricted-extras flashplugin-installer
-          unity-tweak-tool nautilus-open-terminal rdesktop 
+          unity-tweak-tool nautilus-open-terminal rdesktop
           aptitude gedbi synaptic sparkleshare
           emacs graphviz inkscape gimp gimp-plugin-registry gimp-data-extras
           okular pdftk darktable rawthera pee pinta shotwell
-          vlc fping nmap synaptic fdupes catfish samba 
+          vlc fping nmap synaptic fdupes catfish samba
           abiword chromium-browser
-          git Curl  p7zip-full  
+          git Curl  p7zip-full
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
           texlive-fonts-recommended  biblatex biber xindy python-pip
@@ -406,7 +406,7 @@ tClearup(){
     doc="*.doc* *.docx* *.odc *.htm *.html *.hml"
     pic="*.png *.jpg *.jpeg *.bmp *.gif *.svg"
     staData="*.sas *.dat *.csv *.txt *.Rds *.Rdata *.db *.sdb"
-    vecData="*.xml *.kml *.kmz *.tiff *.nc *.shp *.shx *.dbf *.prj *.e00, *.csv *.xls *.xlsx "
+    vecData="*.xml *.kmz *.kml *.tiff *.nc *.shp *.shx *.dbf *.prj *.e00, *.csv *.xls *.xlsx "
     grdData="*.tif *.tiff *.img *.dem *.geotiff "
     zip="*.zip *.7z *.tar *.rar *.gz *.old *.bak *.back *.backup"
     exe="*.exe *.msi *.deb *.ppd"
