@@ -44,7 +44,7 @@ function uIn(){
           okular pdftk darktable rawthera pee pinta shotwell
           vlc fping nmap synaptic fdupes catfish samba
           abiword chromium-browser
-          git Curl  p7zip-full python-notify
+          git Curl  p7zip-full python-notify ditaa
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
           texlive-fonts-recommended  biblatex biber xindy python-pip
@@ -735,6 +735,7 @@ e(){
     then
         rm -rf  ~/SparkleShare/emacs.d/e1_tianEmacs/*
         rm -f ~/SparkleShare/emacs.d/e1_tianEmacs/*
+        rm -rf ~/SparkleShare/emacs.d/00_setEmacs/elpa/*.elc
         \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/elpa/  ~/SparkleShare/emacs.d/e1_tianEmacs/elpa
         \ln -sfv ~/SparkleShare/emacs.d/00_setEmacs/share/  ~/SparkleShare/emacs.d/e1_tianEmacs/share
         \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/e1_tianEmacs.init.el ~/SparkleShare/emacs.d/e1_tianEmacs/init.el
