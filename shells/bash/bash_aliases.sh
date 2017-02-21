@@ -95,6 +95,20 @@ function pdfCompress(){
 #gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${1%\.pdf}-compressed.pdf $1
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.3 -dDownsampleColorImages=true -dColorImageResolution=150 -dNOPAUSE  -dBATCH  -sOutputFile=${1%\.pdf}-compressed.pdf $1
 }
+function pdfWc(){
+echo "PDF words counts by pdftotex and wc:lines, words, characters:"
+pdftotext $1 - | wc -w
+pdftotext $1 - | tr -d '.' | wc -w
+pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]*$" > words
+#gedit words
+pdftotext $1 - | tr " " "\n" | grep -f words | wc
+echo "convert to ps by pdf2ops and ps2ascill then count"
+pdftops $1
+ps2ascii ${1%\.pdf}.ps | wc
+}
+# ##############################################################################
+# Latex
+# ##############################################################################
 function texDiff(){
 echo "latexdiff old new > diff"
 latexdiff -p "latexdiffcfg.tex" $1 $2 > ${2%\.tex}-diff.tex
@@ -113,7 +127,6 @@ detex -n  $1 | sed '/^\s*$/d' | wc
 echo "World counts by texcout"
 texcount $1
 }
-
 function texLink(){
     unalias ln
 linkfrom=${2:-~/SparkleShare/phdtex/thesis/}
@@ -126,19 +139,6 @@ function htmlWc(){
 echo "World counts by texcount.pl html:"
 texcount -html -inc -incbib $filename.html
 }
-function pdfWc(){
-echo "PDF words counts by pdftotex and wc:lines, words, characters:"
-pdftotext $1 - | wc -w
-pdftotext $1 - | tr -d '.' | wc -w
-pdftotext $1 - | tr " " "\n" | sort | uniq | grep "^[A-Za-z]*$" > words
-#gedit words
-pdftotext $1 - | tr " " "\n" | grep -f words | wc
-echo "convert to ps by pdf2ops and ps2ascill then count"
-pdftops $1
-ps2ascii ${1%\.pdf}.ps | wc
-}
-
-
 
 function texClean(){
 dir=build
@@ -150,8 +150,6 @@ texTemp=("*~ *#* *.acn *.acr *.alg *.aux *.bbl *.bcf *.blg *.cb *.cb2 *.dvi *.fl
          *.idx *.ilg *.ind *.ist *.lof *.log *.lot *.out *.equ
          *.lsg *.sot *.stn *.xdy *.run.xml *.slg *.el
          *.nlo *.nls *.synctex.gz *.toc* *.fdb_latexmk, main.pdf test.pdf")
-
-
 #texOut=("${filename}.pdf" "${filename}.ps" "${filename}.dvi")
 for i in $texTemp; do rm -rf $i; done
 for i in $texTemp; do rm -rf $dir/$i; done
