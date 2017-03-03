@@ -39,7 +39,7 @@ for i in $ppas; do sudo add-apt-repository $i; done
 }
 #  sparkleshare lattern nustore
 function uIn(){
-    apps="ubuntu-restricted-extras flashplugin-installer
+    apps="gdebi ubuntu-restricted-extras flashplugin-installer
           unity-tweak-tool nautilus-open-terminal rdesktop
           aptitude gedbi synaptic cmake zlib1g-dev build-essential
           emacs graphviz inkscape gimp gimp-plugin-registry gimp-data-extras
@@ -65,12 +65,12 @@ find -L $DIR -maxdepth 1 -type l -delete
 function geInstall(){
 sudo apt-get install -y lsb-core  libfontconfig.so.1
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_i386.deb
-sudo dpkg -i google-earth-stable_current_i386.deb -y
+sudo gdebi google-earth-stable_current_i386.deb -y
 uu
 }
 
 function debAll(){
-sudo dpkg -i *.deb
+sudo gdebi *.deb
 }
 # alias e='gedit' set to emacs select
 alias c='tcsh'
