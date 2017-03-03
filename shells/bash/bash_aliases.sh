@@ -33,17 +33,19 @@ alias mykey='xmodmap ~/SparkleShare/config/xmodmap/Xmodmap'
 
 function uPPA(){
     ppas=" "
-sudo add-apt-repository ppa:ubuntugis/ppa
+    sudo add-apt-repository ppa:ubuntugis/ppa
+    sudo add-apt-repository ppa:wiznote-team
 for i in $ppas; do sudo add-apt-repository $i; done
 }
+#  sparkleshare lattern nustore
 function uIn(){
     apps="ubuntu-restricted-extras flashplugin-installer
           unity-tweak-tool nautilus-open-terminal rdesktop
-          aptitude gedbi synaptic sparkleshare
+          aptitude gedbi synaptic cmake zlib1g-dev build-essential
           emacs graphviz inkscape gimp gimp-plugin-registry gimp-data-extras
           okular pdftk darktable rawthera pee pinta shotwell
           vlc fping nmap synaptic fdupes catfish samba
-          abiword chromium-browser
+          abiword chromium-browser virtualbox
           git Curl  p7zip-full python-notify ditaa
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
@@ -234,8 +236,6 @@ echo "Success!"
 cp  $dir/$filename.pdf .
 okular $filename.pdf
 }
-
-
 
 
 function mvt(){
