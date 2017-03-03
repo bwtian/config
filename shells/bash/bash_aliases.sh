@@ -50,7 +50,7 @@ function uIn(){
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
           texlive-fonts-recommended  biblatex biber xindy python-pip
-          qgis gdal-bin libgdal-dev r-base compizconfig-settings-manager
+          qgis gdal-bin libgdal-dev r-base r-core compizconfig-settings-manager
           testdisk ibus-mozc "
     for i in $apps; do sudo apt-get build-dep -y $i; done
     for i in $apps; do sudo apt-get install -y $i; done
