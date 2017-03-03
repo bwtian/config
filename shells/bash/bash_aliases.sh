@@ -581,7 +581,7 @@ snap()
 alias x="exi"
 alias h='history'
 alias j='jobs -l'
-alias deb='sudo dpkg -i'
+alias deb='sudo gdebi'
 alias ss='source'
 alias which='type -a'
 alias mozc-config="/usr/lib/mozc/mozc_tool -mode=config_dialog"
