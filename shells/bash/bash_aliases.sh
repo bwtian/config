@@ -34,7 +34,8 @@ alias mykey='xmodmap ~/SparkleShare/config/xmodmap/Xmodmap'
 function uPPA(){
     ppas=" "
     sudo add-apt-repository ppa:ubuntugis/ppa
-    sudo add-apt-repository ppa:wiznote-team
+    #sudo add-apt-repository ppa:wiznote-team/ppa
+    sudo add-apt-repository ppa:ubuntu-elisp/ppa
 for i in $ppas; do sudo add-apt-repository $i; done
 }
 #  sparkleshare lattern nustore
