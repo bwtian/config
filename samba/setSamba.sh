@@ -5,4 +5,4 @@ sudo groupadd sambashare
 sudo adduser `whoami` sambashare
 sudo smbpasswd -a `whoami`
 sudo gedit /etc/samba/smbusers
-smbpasswd tian
+smbpasswd t
