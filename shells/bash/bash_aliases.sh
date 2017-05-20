@@ -3,6 +3,7 @@
 #+AUTHOR:    Bingwei TIAN
 #+EMAIL:     bwtian@gmail.com
 #+DATE:      2012-09-10 Mon
+#+LASTEDIT:
 #+DESCRIPTION: if you donot want use alias, add a \ before alias name
 #+LINK_HOME:
 #+KEYWORDS: alaias, \,unalias,
