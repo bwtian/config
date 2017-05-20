@@ -3,8 +3,7 @@
 #+AUTHOR:    Bingwei TIAN
 #+EMAIL:     bwtian@gmail.com
 #+DATE:      2012-09-10 Mon
-#+LASTEDIT: org-mode
-
+#+LASTEDIT: <2017-05-20 Sat>
 #+DESCRIPTION: if you donot want use alias, add a \ before alias name
 #+LINK_HOME:
 #+KEYWORDS: alaias, \,unalias,
