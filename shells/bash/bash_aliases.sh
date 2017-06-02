@@ -36,24 +36,26 @@ function uPPA(){
     ppas=" "
     sudo add-apt-repository ppa:ubuntugis/ppa
     #sudo add-apt-repository ppa:wiznote-team/ppa
+    # emacs-snapshot
     sudo add-apt-repository ppa:ubuntu-elisp/ppa
 for i in $ppas; do sudo add-apt-repository $i; done
+sudo apt-get update
+uIn
 }
 #  sparkleshare lattern nustore
 function uIn(){
     apps="gdebi ubuntu-restricted-extras flashplugin-installer
           unity-tweak-tool nautilus-open-terminal rdesktop
           aptitude gedbi synaptic cmake zlib1g-dev build-essential
-          emacs graphviz inkscape gimp gimp-plugin-registry gimp-data-extras
+          graphviz inkscape gimp gimp-plugin-registry gimp-data-extras
           okular pdftk darktable rawthera pee pinta shotwell
           vlc fping nmap synaptic fdupes catfish samba
-          abiword chromium-browser virtualbox
-          git Curl  p7zip-full python-notify ditaa
+          abiword chromium-browser virtualbox git Curl  p7zip-full python-notify ditaa
           texstudio texlive-full texlive-latex-pandoc  texlive-latex-base
           texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
           texlive-fonts-recommended  biblatex biber xindy python-pip
           qgis gdal-bin libgdal-dev r-base r-core compizconfig-settings-manager
-          testdisk ibus-mozc "
+          testdisk ibus-mozc emacs emacs-snapshot emacs-snapshot-el"
     for i in $apps; do sudo apt-get build-dep -y $i; done
     for i in $apps; do sudo apt-get install -y $i; done
 #  virtualbox mendeleydesktop chromium-browser rstudio nautilus-dropbox
@@ -68,7 +70,6 @@ function geInstall(){
 sudo apt-get install -y lsb-core  libfontconfig.so.1
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_i386.deb
 sudo gdebi google-earth-stable_current_i386.deb -y
-uu
 }
 
 function debAll(){
@@ -722,92 +723,38 @@ e(){
     cd ~
     \rm -f .emacs
     \rm -rf .emacs.d
-    if [ "$1" -eq 0 ]
+    if [ "$1" -eq 1 ]
     then
-        rm -rf  ~/SparkleShare/emacs.d/e0_builtinEmacs/*
-        rm -f ~/SparkleShare/emacs.d/e0_builtinEmacs/*
-        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/elpa/  ~/SparkleShare/emacs.d/e0_builtinEmacs/elpa
-        \ln -sfv ~/SparkleShare/emacs.d/00_setEmacs/share/  ~/SparkleShare/emacs.d/e0_builtinEmacs/share
-        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/e0_builtinEmacs.init.el  ~/SparkleShare/emacs.d/e0_builtinEmacs/init.el
-        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/e0_builtinEmacs.org ~/SparkleShare/emacs.d/e0_builtinEmacs/
-        \ln -sfv ~/SparkleShare/emacs.d/e0_builtinEmacs ~/.emacs.d
-    elif [ "$1" -eq 1 ]
-    then
-        rm -rf  ~/SparkleShare/emacs.d/e1_tianEmacs/*
-        rm -f ~/SparkleShare/emacs.d/e1_tianEmacs/*
-        rm -rf ~/SparkleShare/emacs.d/00_setEmacs/elpa/*.elc
-        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/elpa/  ~/SparkleShare/emacs.d/e1_tianEmacs/elpa
-        \ln -sfv ~/SparkleShare/emacs.d/00_setEmacs/share/  ~/SparkleShare/emacs.d/e1_tianEmacs/share
-        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/e1_tianEmacs.init.el ~/SparkleShare/emacs.d/e1_tianEmacs/init.el
-        \ln -sfv  ~/SparkleShare/emacs.d/00_setEmacs/00_initEmacs/orgEmacs/* ~/SparkleShare/emacs.d/e1_tianEmacs/
-        \ln -sfv  ~/SparkleShare/emacs.d/e1_tianEmacs ~/.emacs.d
+        rm -rf  ~/SparkleShare/emacs.d/e1_tianEmacs.d/*
+        rm -f ~/SparkleShare/emacs.d/e1_tianEmacs.d/*
+        rm -rf ~/SparkleShare/emacs.d/e0_emacs.d/elpa/*.elc
+        \ln -sfv  ~/SparkleShare/emacs.d/e0_emacs.d/elpa/  ~/SparkleShare/emacs.d/e1_tianEmacs.d/elpa
+        \ln -sfv ~/SparkleShare/emacs.d/e0_emacs.d/share/  ~/SparkleShare/emacs.d/e1_tianEmacs.d/share
+        \ln -sfv  ~/SparkleShare/emacs.d/e0_emacs.d/init/e1_tianEmacs.init.el ~/SparkleShare/emacs.d/e1_tianEmacs.d/init.el
+        \ln -sfv  ~/SparkleShare/emacs.d/e0_emacs.d/orgEmacs/* ~/SparkleShare/emacs.d/e1_tianEmacs.d/
+        \ln -sfv  ~/SparkleShare/emacs.d/e1_tianEmacs.d ~/.emacs.d
+        emacs
     elif [ "$1" -eq 2 ]
     then
-        #\ln -sfv  ~/SparkleShare/emacs.d/e2_texEmacs ~/.emacs.d
-        ### quick e1
-        \ln -sfv  ~/SparkleShare/emacs.d/e1_tianEmacs ~/.emacs.d
-    elif [ "$1" -eq 3 ]
+        rm -rf  ~/SparkleShare/emacs.d/e1_tianEmacs.d/*
+        rm -f ~/SparkleShare/emacs.d/e1_tianEmacs.d/*
+        rm -rf ~/SparkleShare/emacs.d/e0_emacs.d/elpa/*.elc
+        \ln -sfv  ~/SparkleShare/emacs.d/e0_emacs.d/elpa/  ~/SparkleShare/emacs.d/e1_tianEmacs.d/elpa
+        \ln -sfv ~/SparkleShare/emacs.d/e0_emacs.d/share/  ~/SparkleShare/emacs.d/e1_tianEmacs.d/share
+        \ln -sfv  ~/SparkleShare/emacs.d/e0_emacs.d/init/e1_tianEmacs.init.el ~/SparkleShare/emacs.d/e1_tianEmacs.d/init.el
+        \ln -sfv  ~/SparkleShare/emacs.d/e0_emacs.d/orgEmacs/* ~/SparkleShare/emacs.d/e1_tianEmacs.d/
+        \ln -sfv  ~/SparkleShare/emacs.d/e1_tianEmacs.d ~/.emacs.d
+         emacs-snapshot
+    elif [ "$1" -eq 0 ]
     then
-        \ln  -sv  ~/SparkleShare/emacs.d/e3_essEmacs  ~/.emacs.d
-
-    elif [ "$1" -eq 4 ]
-    then
-        \ln  -sv  ~/SparkleShare/emacs.d/e4_minEmacs  ~/.emacs.d
-
-    elif [ "$1" -eq 5 ]
-    then
-        \ln  -sv ~/SparkleShare/emacs.d/e5_stableEmacs  ~/.emacs.d
-
-    elif [ "$1" -eq 11 ]
-    then
-        \ln  -sv ~/ ~/SparkleShare/emacs.d/gitEmacs/e11_prelude.git  ~/.emacs.d
-
-    elif [ "$1" -eq 12 ]
-    then
-       \ln  -sv ~/SparkleShare/emacs.d/gitEmacs/e12_emacs24-starter-kit.git  ~/.emacs.d
-
-    elif [ "$1" -eq 13 ]
-    then
-       \ln  -sv ~/SparkleShare/emacs.d/gitEmacs/e13_kjhealy-emacs-starter-kit.git  ~/.emacs.d
-
-    elif [ "$1" -eq 14 ]
-    then
-       \ln  -sv ~/SparkleShare/emacs.d/gitEmacs/e14_xaosfiftytwo.git  ~/.emacs.d
-
-    elif [ "$1" -eq 15 ]
-    then
-       \ln  -sv ~/SparkleShare/emacs.d/gitEmacs/e15_slemeshevsky.git  ~/.emacs.d
-
-    elif [ "$1" -eq 16 ]
-    then
-       \ln  -sv  ~/SparkleShare/emacs.d/gitEmacs/e16_uwabami.git/emacs.d  ~/.emacs.d
-
-    elif [ "$1" -eq 17 ]
-    then
-       \ln  -sv  ~/SparkleShare/emacs.d/gitEmacs/emacs24-starter-kit.git  ~/.emacs.d
-
+        emacs-snapshot
     else
-        'emacs'
+        emacs
     fi
 }
-
-alias em='e 1 | emacs'
-alias e0='e 0 | emacs'
-alias ee='e 0 | emacs'
-alias e1='e 1 | emacs'
-alias e2='e 2 | emacs'
-alias e3='e 3 | emacs'
-alias e4='e 4 | emacs'
-alias e5='e 5 | emacs'
-alias e6='e 6 | emacs'
-alias e11='e 11 | emacs'
-alias e12='e 12 | emacs'
-alias e13='e 13 | emacs'
-alias e14='e 14 | emacs'
-alias e15='e 15 | emacs'
-alias e16='e 16 | emacs'
-alias e17='e 17 | emacs'
-alias e18='e 18 | emacs'
+alias ee='e 0'
+alias e1='e 1'
+alias e2='e 2'
 
 #######################################################################
 ##  Source other files
@@ -821,7 +768,7 @@ sss(){
 #######################################################################
 
 upR(){
-    ./configure --enable-R-shlib --prefix=/usr/local
+    /configure --enable-R-shlib --prefix=/usr/local
     make
     sudo make install
 }
