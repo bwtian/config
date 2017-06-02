@@ -723,6 +723,7 @@ e(){
     cd ~
     \rm -f .emacs
     \rm -rf .emacs.d
+    \rm -f ~/
     if [ "$1" -eq 1 ]
     then
         rm -rf  ~/SparkleShare/emacs.d/e1_tianEmacs.d/*
