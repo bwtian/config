@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/vectorgeoref" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
