@@ -23,8 +23,8 @@ sudo apt-get install apt-file -y
 apt-file update
 
 
-sudo pip install --upgrade pip 
-sudo pip install --upgrade virtualenv 
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
 
 
 
