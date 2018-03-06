@@ -31,7 +31,7 @@ codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
 # #####################################################################
 alias uu='source ~/SparkleShare/linconfig/deb/update.deb.sh'
 alias mykey='xmodmap ~/SparkleShare/linconfig/xmodmap/Xmodmap'
-#xmodmap ~/SparkleShare/.linconfig/xmodmap/Xmodmap
+#xmodmap ~/SparkleShare/linconfig/xmodmap/Xmodmap
 function uPPA(){
     ppas=" "
     sudo add-apt-repository ppa:ubuntugis/ppa
