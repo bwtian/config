@@ -14,9 +14,9 @@
 gmail="bwtian@gmail.com"
 
 # Wed May  7 23:32:09 JST 2014 - MODIS Reprojection Tool modifications
-MRT_HOME="~/SparkleShare/.linconfig/MRT"
-PATH="$PATH:~/SparkleShare/.linconfig/MRT/bin"
-MRT_DATA_DIR="~/SparkleShare/.linconfig/MRT/data"
+MRT_HOME="~/SparkleShare/linconfig/MRT"
+PATH="$PATH:~/SparkleShare/linconfig/MRT/bin"
+MRT_DATA_DIR="~/SparkleShare/linconfig/MRT/data"
 export MRT_HOME PATH MRT_DATA_DIR
 alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
 # set files with password
@@ -29,8 +29,8 @@ codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
 # #####################################################################
 # # Functions
 # #####################################################################
-alias uu='source ~/SparkleShare/.linconfig/deb/update.deb.sh'
-alias mykey='xmodmap ~/SparkleShare/.linconfig/xmodmap/Xmodmap'
+alias uu='source ~/SparkleShare/linconfig/deb/update.deb.sh'
+alias mykey='xmodmap ~/SparkleShare/linconfig/xmodmap/Xmodmap'
 #xmodmap ~/SparkleShare/.linconfig/xmodmap/Xmodmap
 
 function uPPA(){
