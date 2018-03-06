@@ -11,12 +11,12 @@
 # #####################################################################
 # # Path
 # #####################################################################
-gmail="bwtian@gmail.com"
+email="bwtian@gmail.com"
 
 # Wed May  7 23:32:09 JST 2014 - MODIS Reprojection Tool modifications
-MRT_HOME="~/SparkleShare/config/MRT"
-PATH="$PATH:~/SparkleShare/config/MRT/bin"
-MRT_DATA_DIR="~/SparkleShare/config/MRT/data"
+MRT_HOME="~/.linconfig/MRT"
+PATH="$PATH:~/.linconfig/MRT/bin"
+MRT_DATA_DIR="~/.linconfig/MRT/data"
 export MRT_HOME PATH MRT_DATA_DIR
 alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
 source ~/SparkleShare/tian/shells/tian.sh
@@ -28,9 +28,9 @@ codename=$(lsb_release -c | cut -d : -f 2 |sed -e 's/^[ \t]*//') # delete space
 # #####################################################################
 # # Functions
 # #####################################################################
-alias uu='source ~/SparkleShare/config/deb/update.deb.sh'
-alias mykey='xmodmap ~/SparkleShare/config/xmodmap/Xmodmap'
-#xmodmap ~/SparkleShare/config/xmodmap/Xmodmap
+alias uu='source ~/.linconfig/deb/update.deb.sh'
+alias mykey='xmodmap ~/.linconfig/xmodmap/Xmodmap'
+#xmodmap ~/.linconfig/xmodmap/Xmodmap
 
 function uPPA(){
     ppas=" "
