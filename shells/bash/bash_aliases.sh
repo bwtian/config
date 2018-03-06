@@ -20,7 +20,7 @@ MRT_DATA_DIR="~/SparkleShare/linconfig/MRT/data"
 export MRT_HOME PATH MRT_DATA_DIR
 alias rdesk="source ~/Dropbox/config/shells/bash/rdesktop.sh"
 # set files with password
-source ~/SparkleShare/tian/shells/tian.sh
+. ~/SparkleShare/tian/shells/tian.sh
 # #####################################################################
 # # Global Variables
 # #####################################################################
